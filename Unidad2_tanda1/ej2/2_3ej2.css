@@ -35,7 +35,23 @@ hr {
   background: lightsteelblue;
 }
 
+/********************************************************************/
+div[class="uno"] ul :not(:first-child) , div[class="uno"] ol :not(:first-child)
+{
+  background-color: grey;
+}
 
+.dos
+{
+  background: none;
+  color:brown;
+}
+div[class="dos"] :nth-child(2) :nth-child(3)
+{  
+  background-color: lightsteelblue;
+}
+
+/* Insertar texto */
 
 
 
