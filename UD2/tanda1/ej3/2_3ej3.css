@@ -1,0 +1,49 @@
+body {
+    color: grey;
+}
+
+/*ESTILO DE CLASES*/
+
+.verdes
+{
+    color: green;
+}
+.segundo
+{
+    color: blue;
+}
+/*  sobra
+. {
+    color:red;
+}
+*/
+.segundo :first-child, .segundo :last-child{
+    font-style: oblique;
+}
+.fosfo {
+    background-color: aqua;
+}
+.azules{
+    text-shadow: 2px 2px #ff0000;
+}
+
+
+/*Estilo de Atributo*/
+.azules{
+    text-decoration: overline;
+}
+
+/*El primer elemento*/
+
+il :first-child{
+    text-align: right
+}
+/*Añadir comentarios de antes y después del color verde */
+.verdes::before
+{
+    content: "Estoy antes de los de color verde";
+}
+.verdes::after
+{
+    content: "Estoy tras de los de color verde";
+}
