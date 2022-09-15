@@ -1,0 +1,16 @@
+body
+{
+    color: red;
+}
+strong
+{
+    color: blue;
+}
+em, del
+{
+    color: yellow;
+}
+span
+{
+    color: green;
+}
