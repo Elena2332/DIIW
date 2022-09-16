@@ -1,0 +1,40 @@
+ h1  /*teal, orange, purple, olive */
+{
+    color: teal;
+}
+h2
+{
+    color: blue;
+}
+p strong 
+{
+    color: red;
+}
+div
+{
+    color: olive;
+}
+span[class = "destacado"]
+{
+    color: orange;
+}
+span[class="adicional"] 
+{
+    color: teal;
+}
+.adicional p span
+{
+    color: teal;
+}
+a
+{
+    color: red;
+}
+a em
+{
+    color: blue;
+}
+div p span[class="especial"]
+{
+    color: purple;
+}
