@@ -1,0 +1,40 @@
+*
+{
+    line-height : 2em;
+    text-align: justify;
+}
+.especial
+{
+    background-color: lightgrey;
+    font-size: 1.5em;
+    font-family: Arial;
+}
+.especial em
+{
+    font-style: normal;
+    font-weight: bold;
+}
+.especial strong
+{
+    background-color: #FF6;
+    padding: 3px;
+    font-style: italic;
+    font-weight: normal;
+    border-color: black;
+    border-bottom: 1px;
+    border-top: 1px;  
+}
+.especial linea1
+{
+    color: blue;
+    background-color: lightblue;
+    text-transform: uppercase;
+    font-family: Verdana;
+
+}
+.especial ::first-letter
+{
+    font-size: 2em;
+    font-family: serif;
+    color: blue;
+}

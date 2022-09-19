@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Barrio/Barrio-Regular.ttf');
+}
+.recuadro1
+{
+    font-family: 'Niconne';
+    width: 30%;
+    background-color: rgb(193, 184, 173);
+    border-radius: 20pt;
+    padding: 10pt;
+}
+.recuadro2
+{
+    font-family: 'Barrio-Regular';
+    width: 30%;
+    background-color: rgb(193, 184, 173);
+    border-radius: 20pt;
+    padding: 10pt;
+    float: right;
+}

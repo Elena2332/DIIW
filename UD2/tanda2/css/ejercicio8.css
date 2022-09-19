@@ -1,0 +1,9 @@
+.recuadro1
+{
+    align-items: center;
+    margin: 5em 25em;
+    padding: 6pt;
+    border-radius: 20pt;
+    background-color: rgb(183, 177, 168);
+    column-count: 3;
+}

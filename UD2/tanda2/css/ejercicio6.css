@@ -1,20 +1,39 @@
 .recuadro1
 {
-    color: rgb(247, 64, 9);
+    font-size: 20pt;
+    color: rgba(247, 64, 9, 0.3);
+    padding: 1pt;
+    margin-bottom: 8pt;
 }
 .recuadro2
 {
-    color: rgb(247, 64, 9);
+    font-size: 20pt;
+    color: rgba(247, 64, 9, 0.6);
+    padding: 1pt;
+    margin-bottom: 8pt;
 }
 .recuadro3
 {
-    color: rgb(247, 64, 9);
+    font-size: 20pt;
+    color: rgba(247, 64, 9, 0.9);
+    padding: 1pt;
+    margin-bottom: 8pt;
 }
 .recuadro4
 {
-    color: rgb(247, 64, 9);
+    font-size: 20pt;
+    color: rgba(247, 64, 9, 1);
+    background-color: rgba(20, 163, 146, 0.8);
+    padding: 1pt;
+    margin-bottom: 8pt;
+    border-radius: 10pt;
 }
 .recuadro5
 {
-    color: rgb(247, 64, 9);
+    font-size: 20pt;
+    color: rgba(247, 64, 9, 0.5);
+    background-color: rgba(20, 163, 146, 0.5);
+    padding: 1pt;
+    margin-bottom: 8pt;
+    border-radius: 10pt;
 }
