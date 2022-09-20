@@ -5,6 +5,7 @@
     border-radius: 20pt;
     background-color: rgb(183, 177, 168);
     column-count: 3;
+    column-rule: 2px solid red;
 }
 .recuadro2
 {
@@ -13,6 +14,7 @@
     border-radius: 20pt;
     background-color: rgb(183, 177, 168);
     column-count: 3;
+    column-rule: 2px dotted red;
 }
 .recuadro3
 {
@@ -21,24 +23,5 @@
     border-radius: 20pt;
     background-color: rgb(183, 177, 168);
     column-count: 3;
-}
-
-.recuadro1 p:nth-child(3),.recuadro1 p:nth-child(4)
-{
-    /* column-rule-style: solid;
-    column-rule-width: 2px;
-    border-color: red; */
-    column-rule: red 2px solid;
-}
-.recuadro2 p:nth-child(3),.recuadro2 p:nth-child(4)
-{
-    column-rule-style: dotted;
-    column-rule-width: 2px solid;
-    border-color: red;
-}
-.recuadro3 p:nth-child(3),.recuadro3 p:nth-child(4)
-{
-    column-rule-style: dashed;
-    column-rule-width: 2px;
-    border-color: blue;
+    column-rule: 2px dashed blue;
 }

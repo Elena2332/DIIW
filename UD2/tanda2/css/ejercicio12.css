@@ -1,12 +1,16 @@
+body
+{
+    text-align: center;
+}
 .titulo1
 {
-
+    text-shadow: 3px 3px 3px black;  /* x y difuminacion color */
 }
 .titulo2
 {
-    
+    text-shadow: -4px -4px 4px black;
 }
 .titulo3
 {
-    
+    text-shadow: 1px 1px 2px red, 4px 4px 3px green, 5px 5px 3px blue;
 }

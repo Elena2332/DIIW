@@ -8,6 +8,7 @@
     background-color: lightgrey;
     font-size: 1.5em;
     font-family: Arial;
+    text-indent: 60px;
 }
 .especial em
 {
@@ -20,15 +21,14 @@
     padding: 3px;
     font-style: italic;
     font-weight: normal;
-    border-color: black;
-    border-bottom: 1px;
-    border-top: 1px;  
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;  
 }
-.especial linea1
+.especial:first-line
 {
     color: blue;
     background-color: lightblue;
-    text-transform: uppercase;
+    font-variant: small-caps;
     font-family: Verdana;
 
 }
