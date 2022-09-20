@@ -1,0 +1,24 @@
+.contenedor
+{
+    display: flex;
+    justify-content: center;
+}
+.recuadro1, .recuadro2
+{
+    column-gap: 30px;
+    margin: 20px;
+    width: 20%;
+    padding: 30px;
+}
+.recuadro1
+{
+    background-color: lightgrey;
+    border-radius: 20pt;
+    box-shadow: 6px 6px 10px grey;
+}
+.recuadro2
+{
+    background-color: darkgoldenrod;
+    border-radius: 20pt;
+    box-shadow: -6px -6px 10px grey;
+}

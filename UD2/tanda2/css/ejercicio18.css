@@ -1,17 +1,24 @@
 h1
 {
-    text-shadow: -3px -3px 1px black;  /* x y difuminacion color */
+    text-shadow: -5px -5px 1px grey, 4px 4px 1px lightgrey;  /* x y difuminacion color */
+    
+}
+div
+{
+    border: 20px solid transparent;
+    padding: 10pt;
+    margin: 6pt;
+    background-color: lightgray;
 }
 .caja1
 {
-    border-image: url(imagenes/imagen.jpg) 33% round;
-
+    border-image: url(../imagenes/bordes.png) 33% fill;
 }
 .caja2
 {
-
+    border-image: url(../imagenes/bordes.png) 33% round;
 }
 .caja3
 {
-    
+    border-image: url(../imagenes/bordes.png) 33% repeat;
 }
