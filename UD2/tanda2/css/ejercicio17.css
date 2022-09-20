@@ -1,0 +1,47 @@
+p
+{
+    width: 450px;
+    height: 120px;
+    padding: 20px;
+}
+.primero
+{
+    border-top: 4px solid red; 
+    border-bottom: 4px solid red; 
+    border-left: 4px solid red; 
+    margin-left: 30px;
+    background-color: blue;
+}
+.segundo
+{
+    border: 8px double green;
+    margin-top: 40px;
+    background-color: red;
+}
+.tercero
+{
+    border-top: 12px dotted blue; 
+    border-left: 12px dotted blue; 
+    border-right: 12px dotted blue; 
+    border-bottom: 6px solid red; 
+    margin-left: 60px;    
+    background-color: green; 
+}
+.primero span
+{
+    font-weight: bold;
+    font-size: 1em;
+    color: red;
+}
+.segundo span
+{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: blue;
+}
+.tercero span
+{
+    font-weight: bold;
+    font-size: 0.8em;
+    color: white;
+}

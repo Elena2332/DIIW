@@ -1,0 +1,31 @@
+
+div[class="bordes"]
+{
+    background-color: lightcyan;
+    border-top: 26px solid blue;
+    border-left: 15px double greenyellow;
+    border-right: 10px solid deeppink;
+    border-bottom: 2px dashed red;
+}
+div[class="bordes2"]
+{
+    background-color: sandybrown;
+    border-top: 26px solid blue;
+    border-left: 15px double greenyellow;
+    border-right: 10px solid deeppink;
+    border-bottom: 2px dashed red;
+}
+div[class="bordes3"]
+{
+    background-color: pink;
+    border-top: 26px solid blue;
+    border-left: 15px double greenyellow;
+    border-right: 10px solid deeppink;
+    border-bottom: 2px dashed red;
+}
+div[class="bordes4"]
+{
+    background-color: yellow;
+    border: 6px dotted blue;
+}
+
