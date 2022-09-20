@@ -4,6 +4,7 @@ h1
 }
 .caja1
 {
+    border-image: url(imagenes/imagen.jpg) 33% round;
 
 }
 .caja2
