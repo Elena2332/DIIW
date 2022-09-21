@@ -1,0 +1,17 @@
+/* body
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} */
+.cuadro1
+{
+    width: 600px;
+    height: 600px;
+    background: url(../imagenes/madera1.png) no-repeat right bottom, 
+            url(../imagenes/logo1.png) no-repeat right top,
+            url(../imagenes/logo1.png) no-repeat left top,
+            url(../imagenes/logo1.png) no-repeat left bottom,
+            darksalmon;
+    margin:auto;   /*  coloca en medio  */
+}

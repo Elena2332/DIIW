@@ -1,0 +1,14 @@
+body
+{
+    display: flex;
+    justify-content: center;
+}
+.recuadro1
+{ 
+    margin: 20px;
+    width: 20%;
+    padding: 30px;
+    background-color: lightgrey;
+    border-radius: 20pt;
+    box-shadow: 0px 0px 20px lime, 0px 0px 20px red inset;
+}
