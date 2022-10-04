@@ -1,0 +1,12 @@
+.alinearCentro
+{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin: 0px auto;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
