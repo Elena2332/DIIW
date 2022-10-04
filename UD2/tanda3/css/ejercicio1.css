@@ -1,0 +1,35 @@
+h1
+{
+    text-align: center;
+}
+body>*:not(:first-child)
+{
+    border: thick solid black ;
+    color: white;
+    font-weight: bold;
+}
+p
+{
+    background-color: red;
+    width: 25%;
+    height: 75px;
+}
+div
+{
+    background-color: green;
+    width: 25%;
+    height: 75px;
+    margin: 12px 0px;
+}
+span
+{
+    background-color: blue;
+    margin-right: 30px;
+}
+h1 span
+{
+    background-color: white;
+    font-size: 1.5em;
+    text-decoration: underline;
+    color: red;
+}

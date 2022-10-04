@@ -1,0 +1,42 @@
+.container
+{
+    background-color: lightcyan;
+    width: 620px;
+    height: 600px;
+    align-items: center;
+    margin: 50px auto;
+    position: relative;
+}
+#css
+{
+    width: 350px;
+    background-color: lightgrey;
+    font-family: 'Algerian';
+    color: blue;
+    font-size: 200px;
+    position: absolute;
+    top: 250px;
+    left: 120px;
+}
+#efecto
+{
+    /*letra Arial, tamaño de 70px y color #ff00ff. Está desplazado con respecto al div contenedor 230px hacia abajo y 40px a la derecha.*/
+    font-family: Arial;
+    font-size: 70px;
+    color: #ff00ff;
+    position: absolute;
+    top: 230px;
+    left: 40px;
+    z-index: 1;
+}
+#hojas
+{
+    /*letra Arial, tamaño de 90px y color red. Está desplazado con respecto al div contenedor 255px hacia abajo y 40px a la derecha. */
+    font-family: Arial;
+    font-size: 90px;
+    color: red;
+    position: absolute;
+    top: 255px;
+    left: 40px;
+    z-index: 2;
+}

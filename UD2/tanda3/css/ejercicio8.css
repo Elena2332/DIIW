@@ -1,0 +1,25 @@
+.conteiner
+{
+    background-color: lightgray;
+}
+.primeros
+{
+    background-color: lightgreen;
+    display: block;
+    margin-top: 5px;
+    padding: 3px;
+    width: 100px;
+}
+.segundos
+{
+    background-color: lightskyblue;
+    display: inline;
+}
+.terceros
+{
+    color: white;
+    background-color: pink;
+    display: inline-block;
+    margin: 8px;
+    padding: 4px;
+}
