@@ -1,0 +1,66 @@
+body
+{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;    
+}
+header
+{
+    background-color: #202020;
+    width: 100%; 
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+header img
+{
+    object-fit: cover;
+    height: 60px;
+}
+h1
+{
+    text-align: center;    
+}
+div
+{
+    width: 100%;
+    display: flex;
+}
+article
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    width: 33%;
+    padding: 10px;
+    position: relative;
+}
+article>*
+{
+    order: 2; /* Valor por defecto 0. cuanto más pequeño, más prioritario es y antes aparece */
+}
+article img
+{
+    order: 0;
+}
+#prim
+{
+    background-color: lightskyblue;   
+}
+#sec
+{
+    background-color: lightgreen;   
+}
+#ter
+{
+    background-color: aquamarine;   
+}
+button
+{
+    width: 100px;   
+    position: absolute;
+    bottom: 10px;
+}
