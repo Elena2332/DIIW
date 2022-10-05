@@ -1,0 +1,108 @@
+/* ejercicio12 */
+body
+{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;    
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/*barra navevgacion*/
+nav
+{
+    width: 100%;
+    border-bottom: 2px solid limegreen;
+}
+nav ol
+{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    list-style-type: none; /*quita formato lista*/
+    display: flex;
+    justify-content: space-between;  /*justifica con espacios iguales*/
+}
+li
+{
+    display: flex;    
+    flex-direction: row;
+    align-items: center;
+}
+li p
+{
+    text-align: right;
+    background-color: limegreen;
+    padding: 10px 5px 10px 60px;
+} 
+li img
+{
+    object-fit: cover; /*respeta la proporcion original de la imagen*/
+    height: 40px;
+}
+
+/*aside*/
+aside
+{
+    color: limegreen;
+    width: 20%;
+}
+aside p:nth-child(even)
+{
+    padding: 10px;
+    border-top: 2px solid limegreen;
+    border-right: 2px solid limegreen;
+}
+aside p:nth-child(odd)
+{
+    text-align: right;
+    margin: 20px 0px;
+}
+
+/*main*/
+main
+{
+    margin-left: 10%;
+    width: 69%;
+}
+section
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+section div p:first-child
+{
+    color:black;
+}
+section div p:last-child
+{
+    width: 100%;
+    background-color: limegreen;
+    padding: 10px;
+    margin: 12px;
+}
+section div
+{
+    width: 270px;
+    margin: 10px;
+    font-size: 0.7em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+section:nth-of-type(1) div:nth-of-type(2n)
+{
+    border: 2px solid limegreen;
+}
+section:nth-of-type(2) div:nth-child(2n+1)
+{
+    border: 2px solid limegreen;
+}
+section div img
+{
+    object-fit: cover;
+    width: 250px;
+    margin: 12px;
+}
