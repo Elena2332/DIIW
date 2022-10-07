@@ -5,5 +5,23 @@ body
     padding: 0px;
     margin: 0px;    
 }
-
-
+header
+{
+    background-color: blueviolet;
+}
+nav
+{
+    background-color: rgb(127, 251, 255);
+}
+section
+{
+    background-color: rgb(96, 8, 134);
+}
+aside
+{
+    background-color: purple;
+}
+footer
+{
+    background-color: blueviolet;
+}
