@@ -3,25 +3,36 @@ body
     width: 100%;
     height: 100%;
     padding: 0px;
-    margin: 0px;    
+    margin: 0px;  
+    color: white; 
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 2fr minmax(40px,1fr) 4fr 2fr;
 }
 header
 {
     background-color: blueviolet;
+    grid-column: 1/4;
 }
 nav
 {
+    /* height: 40px; */
     background-color: rgb(127, 251, 255);
+    grid-column: 1/4;
 }
 section
 {
     background-color: rgb(96, 8, 134);
+    grid-column: 2/3;
+    grid-row: 3/4;
 }
 aside
 {
     background-color: purple;
+    grid-row: 3/4;
 }
 footer
 {
     background-color: blueviolet;
+    grid-column: 1/4;
 }
