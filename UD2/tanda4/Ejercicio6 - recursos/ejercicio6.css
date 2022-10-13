@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /*importar fuente*/
+body
+{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;   
+    font-family: 'Bebas Neue';
+    background-color: #c4e1ff;
+}
+
+.grid-container
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+}
+
+.grid-item1
+{
+    grid-column: 3/4;
+    gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-variant: small-caps;
+}
+.grid-item1 p
+{
+    text-align: center;
+    padding: 5px;
+}
+.grid-item1 p:nth-of-type(5)
+{
+    width: 35px;
+    border-radius: 7px;
+    background-color: black;
+    color: white;
+}
+
+.grid-item2
+{
+    text-align: center;
+    grid-column: 1/3;
+    font-size: 1.6em;
+}
+.grid-item2 p:nth-child(3)
+{
+    background-color: rgba(247, 242, 233, 0.63);
+    padding: 5px;
+    margin: 0px 40%;
+}
+.grid-item3
+{
+    grid-column: 3/4;
+    background: url('./img/Aurpegia.jpg') no-repeat;
+    background-size: cover;
+    height: 350px;
+    border: 3px solid white;
+}
+
+.grid-item4
+{
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+    color: grey;
+}
+.grid-item4 article h2
+{
+    font-size: 3.7em;
+
+}
+.grid-item4 article
+{
+    display: grid;
+    grid-template-columns: minmax(40px, 1fr) 8fr;
+    grid-template-rows: auto;
+}
+.grid-item4 article div p
+{
+    position: relative;    
+}
+.grid-item4 article div p span
+{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: #c4e1ff;
+    text-shadow: 2px 1px 2px grey;
+    font-size: 3em;
+}
