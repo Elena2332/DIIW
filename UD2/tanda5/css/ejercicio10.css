@@ -1,0 +1,33 @@
+.menu 
+{
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+    font-family: Helvetica, Verdana, Arial;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 2.2em;
+}
+
+.menu li
+{
+    width: 100%;
+    border-top: 1px solid #4D0000;
+    border-bottom: 1px solid #761A1A;
+    background-color: #660000;  /* deberia de ir en el a */
+}
+.menu li:hover
+{
+    width: 100%;
+    border-top: 1px solid #4D0000;
+    border-bottom: 1px solid #761A1A;
+    background: url(../imagenes/vert-one_arrow.gif) 0.5px no-repeat #900;
+}
+.menu li a
+{
+    width: 100%;
+    color: #FFF;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
