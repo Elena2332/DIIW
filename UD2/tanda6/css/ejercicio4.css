@@ -1,0 +1,28 @@
+h1
+{
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+
+@media screen and (min-width: 500px) 
+{
+    p
+    {
+        column-count: 2;
+    }
+}
+@media screen and (min-width: 800px) 
+{
+    p
+    {
+        column-count: 3;
+    }
+}
+@media screen and (min-width: 1000px) 
+{
+    p
+    {
+        column-count: 4;
+    }
+}
