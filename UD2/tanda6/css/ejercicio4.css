@@ -1,28 +1,115 @@
-h1
+body
 {
-    font-size: 2em;
-    font-weight: bold;
-    color: white;
+    margin: 0;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    background-color: purple;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-@media screen and (min-width: 500px) 
+h1
 {
-    p
+    margin: 5px;
+    font-size: 5em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+ul
+{
+    margin: 0px;
+    padding: 0px;
+}
+nav ul li
+{
+    padding: 2px 10px;
+    margin-bottom: 5px;
+    background-color: white;
+    color: purple;
+    border-radius: 10px;
+    list-style: none;
+    transition: all 0.8s ease;
+    /* transition: all 1s; */
+}
+nav ul li:hover
+{
+    background-color: rgb(109, 108, 108);
+    color: white;
+    border-radius: 0 10px;
+}
+
+.conteiner img 
+{
+    width: 100%;
+}
+
+.conteiner ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.conteiner ul li 
+{
+    list-style: none;
+}
+.conteiner ul li a
+{
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+}
+.conteiner ul li a:hover
+{
+    color: lightskyblue;
+}
+
+@media screen and (min-width: 600px) 
+{
+    nav ul
     {
-        column-count: 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    nav ul li 
+    {
+        margin-right: 3px;
+    }
+
+    .conteiner
+    {
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .conteiner img 
+    {
+        width: 70%;
+    }
+    .conteiner ul
+    {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 0;
+    }
+    .conteiner ul li
+    {
+        padding-top: 10px;
     }
 }
-@media screen and (min-width: 800px) 
+@media screen and (min-width: 900px) 
 {
-    p
+    header 
     {
-        column-count: 3;
+        display: flex;
+        flex-direction: row;
     }
-}
-@media screen and (min-width: 1000px) 
-{
-    p
+    nav
     {
-        column-count: 4;
+        margin: auto 0 auto auto;
     }
 }
