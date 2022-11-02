@@ -1,0 +1,32 @@
+p
+{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: justify;
+    column-count: 1;
+    column-gap: 25px;
+}
+
+
+@media screen and (min-width: 500px) 
+{
+    p
+    {
+        column-count: 2;
+    }
+}
+@media screen and (min-width: 800px) 
+{
+    p
+    {
+        column-count: 3;
+    }
+}
+@media screen and (min-width: 1000px) 
+{
+    p
+    {
+        column-count: 4;
+    }
+}
