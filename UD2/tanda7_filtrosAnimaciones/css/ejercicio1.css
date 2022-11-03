@@ -1,0 +1,80 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteiner
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.conteiner>div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+div>div:nth-of-type(2) img  /* Rotacion de color 200 */
+{
+    filter: hue-rotate(200deg);
+}
+div>div:nth-of-type(3) img  /* Brillo 3 */
+{
+    filter: brightness(3);
+}
+div>div:nth-of-type(4) img  /* Contraste 10 */
+{
+    filter: contrast(10);
+}
+div>div:nth-of-type(5) img  /* Saturacion 10 */
+{
+    filter: saturate(10);
+}
+div>div:nth-of-type(6) img  /* Invertido 1 */
+{
+    filter: invert(1);
+}
+div>div:nth-of-type(7) img  /* Escala de grises 1 */
+{
+    filter: grayscale(1);
+}
+div>div:nth-of-type(8) img  /* Sepia 1 */
+{
+    filter: sepia(1);
+}
+div>div:nth-of-type(9) img  /* Desenfocado 4px */   
+{
+    filter: blur(4px);
+}
+div>div:nth-of-type(10) img  /*Transparencia 0.3 */
+{
+    filter: opacity(0.3);
+}
+
+.conteiner div img:hover
+{
+    transition-duration: 1s;
+    filter:none;
+}
+
+video
+{
+    width: 40%;
+    filter: grayscale(1);
+}
+video:hover
+{
+    transition-duration: 2s;
+    filter:none;
+}
