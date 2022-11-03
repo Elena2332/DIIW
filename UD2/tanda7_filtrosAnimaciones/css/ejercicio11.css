@@ -1,0 +1,56 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+img
+{
+    width: 200px;
+    border-radius: 7px;
+    box-shadow: 10px 6px 3px grey;
+}
+
+div:nth-of-type(1)
+{
+    position: absolute;
+    left: 26%;
+    top: 21%;
+}
+div:nth-of-type(2)
+{
+    position: absolute;
+    left: 40%;
+    top: 28%;
+}
+div:nth-of-type(3)
+{
+    position: absolute;
+    left: 42%;
+    top: 50%;
+}
+div:nth-of-type(4)
+{
+    position: absolute;
+    left: 56%;
+    top: 33%;
+}
+div:nth-of-type(5)
+{
+    position: absolute;
+    left: 29%;
+    top: 61%;
+}
+
+img:hover
+{
+    transition-duration: 1s;
+    transform: scale(2.2);
+}
+
+
+.conteiner div img:hover
+{
+    transition-duration: 1s;
+    filter:none;
+}

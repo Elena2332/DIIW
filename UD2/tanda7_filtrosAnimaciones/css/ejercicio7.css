@@ -20,6 +20,6 @@ div:hover
 {
     transition-duration: 2s;
     width: 30%;
-    background-color: red
+    background-color: red;
 }
 
