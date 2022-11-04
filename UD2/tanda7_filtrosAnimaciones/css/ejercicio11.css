@@ -41,16 +41,19 @@ div:nth-of-type(5)
     left: 29%;
     top: 61%;
 }
+div:nth-of-type(6)
+{
+    position: absolute;
+    left: 61%;
+    top: 46%;
+}
 
 img:hover
 {
     transition-duration: 1s;
-    transform: scale(2.2);
+    transform: scale(1.8);
 }
-
-
-.conteiner div img:hover
+div:hover
 {
-    transition-duration: 1s;
-    filter:none;
+    z-index: 5;
 }
