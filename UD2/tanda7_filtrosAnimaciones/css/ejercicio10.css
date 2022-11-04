@@ -10,10 +10,8 @@ div
     border-radius: 15px;
     width: 80px;
     height: 80px;
-    animation-name: rodeo;
-    animation-duration: 5s;
-    animation-fill-mode: linear;
-    /* animation: rodeo 4s 0s infinite normal linear; */
+    animation: rodeo;
+    animation-duration: 4s;
 }
 
 @keyframes rodeo
