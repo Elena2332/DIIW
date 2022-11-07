@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="UTF-8">
-		<meta name="description" content="Proyecto ev1 de DIIW. (ROLILLO)"/>
-		<meta name="keywords" content="HTML5, CSS3"/>
-        <meta name="author" content="Elena Sanz">
-		<link rel="stylesheet" href="css/estilos.css"/>
+    <meta charset="UTF-8">
+    <meta name="description" content="Proyecto ev1 de DIIW. (ROLILLO)"/>
+    <meta name="keywords" content="HTML5, CSS3"/>
+    <meta name="author" content="Elena Sanz">
+    <link rel="stylesheet" href="css/estilos.css"/>
     <title>Sugerencias</title>
 </head>
 <body>
     <header>
         <a href="index.html" class="Logo">Logo</a>
         <ul class="menu">
-            <li><a href="/sala.html">Sala casual</a></li>
-            <li><a href="/plantillas.html">Juegos y plantillas</a></li>
-            <li><a href="/sugerencias.html">Sugerencias</a></li>
-            <li><a href="/donacion.html">Donaciones</a></li>
+            <li><a href="sala.html">Sala casual</a></li>
+            <li><a href="plantillas.html">Juegos y plantillas</a></li>
+            <li><a href="sugerencias.html">Sugerencias</a></li>
+            <li><a href="donacion.html">Donaciones</a></li>
         </ul>
         <a href="" class="Login"><img src="img/avatar" alt="Login"></a>
     </header>
     <main>
         <form class="sugerencia" enctype="multipart/form-data" method="POST" action="">
-            <div>
-                <label>Nombre:</label>
-                <input type="text" name="inpNom" placeholder="anonimo"/>
-            </div>
-            <div>
-                <label>Email:</label> 
-                <input type="email" name="inpEmail"/>
-            </div>
-            <div>
-                <label>Email:</label>
-                <select>
-                    <option value=""></option>
-                </select>
-            </div>
-            <div>
-                <label>Sugerencia:</label>
-                <textarea></textarea>
-            </div>
-            <div>
-                <button type="button">ENVIAR</button>
-            </div>
+            
+            <label>Nombre:</label>
+            <input type="text" name="inpNom" placeholder="anonimo"/>
+        
+            <label>Email:</label> 
+            <input type="email" name="inpEmail"/>
+        
+            <label>Tipo:</label>
+            <select>
+                <option value="cambio">Modificacion</option>
+                <option value="aniadir">Falta algo</option>
+                <option value="Bug">Reportar error</option>
+                <option value="otro">Otro</option>
+            </select>
+        
+            <label>Sugerencia:</label>
+            <textarea></textarea>
+        
+            <button type="button">ENVIAR</button>
         </form>
     </main>
     <footer>

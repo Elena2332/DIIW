@@ -6,10 +6,8 @@ body
     height: 100%;
     
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: minmax(2% 1fr) 5fr 2fr;
-
-    
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: minmax(2% 1fr) 5fr 2fr;    
 }
 
 a
@@ -31,8 +29,6 @@ header
 {
     grid-column: 1/2;
     grid-row: 1/2;
-
-
 }
 
 .menu
@@ -77,3 +73,19 @@ footer
 {
     height: 25px;
 }
+
+
+/***  Sugerencias  ***/
+main
+{
+    grid-column: 2/3;
+    grid-row: 2/3;     
+}
+.sugerencias
+{   
+    width: 100%;
+    display: grid;
+}
+
+
+
