@@ -6,9 +6,94 @@ body
     height: 100%;
     
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr; 
+    gap: 10px;
+}
+
+header
+{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+main
+{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    width: 100%;
+}
+
+
+footer
+{
+    grid-column: 1/3;
+    grid-row: 3/4;
+
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-image: radial-gradient(rgb(250, 235, 221) 3%, darkgrey 97%, darkgrey 0%);
+}
+.iconofooter
+{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.iconofooter a img
+{
+    height: 25px;
+}
+
+
+/*** SUGERENCIAS ***/
+.sugerencias
+{
+    width: 85%;
+    margin: auto;
+    
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto; 
+    gap: 10px;
+}
+
+.sugerencias * 
+{
+    grid-column: 1/3;
+    padding: 5px;
+}
+input,textarea,select
+{
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+input:focus, textarea:focus, select:focus
+{
+    border: 0px ;
+    /* border: 1px solid rgb(150, 166, 233);    */
+}
+
+.sugerencias textarea
+{
+    height: 100px;
+}
+
+.sugerencias button
+{
+    margin-top: 15px;
+    padding: 10px;
+    border: 0px ;
+    border-radius: 10px;
+}
+
+/* 
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: minmax(2% 1fr) 5fr 2fr;  
-}
 
 a
 {
@@ -77,6 +162,7 @@ footer
 
 
 /***  Sugerencias  ***/
+/*
 main
 {
     grid-column: 2/3;
@@ -108,7 +194,7 @@ input,textarea,select
 }
 input:focus, textarea:focus, select:focus
 {
-    border: 2px solid rgb(77, 93, 157);   /* color del fondo del boton */
+    border: 2px solid rgb(77, 93, 157);   
 }
 textarea
 {
@@ -118,7 +204,6 @@ textarea
 .sugerencias button
 {
     grid-column: 1/2;
-    /* width: 100px; */
     padding: 6%;
     justify-content: center;
     background-color: rgb(77, 93, 157);  
@@ -127,4 +212,4 @@ textarea
 .sugerencias button:hover .avion
 {
     animation: avion 2s 0s 1;
-}
+} */
