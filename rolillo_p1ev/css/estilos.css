@@ -67,23 +67,36 @@ header
     /* display: flex;
     align-self: flex-end; */
     position: absolute;
-    right: -150px;
+    right: 200px;
     width: fit-content;
-    padding: 10px;
-    border: 1px dashed rgb(150, 166, 233);
+    /* padding: 10px; */
+    /* border: 1px dashed rgb(150, 166, 233); */
+    background-color: rgb(150, 166, 233);
+}
+.menu ul
+{
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
 }
 .menu ul li
 {
     list-style: none;
-    /*width: 0;
-    padding: 0;
-    position: absolute;
+    /* width: 100%; */
+    margin: 10px 0px;
+    padding: 10px 15px;
+    /*position: absolute;
     left: 38px;
     overflow: hidden;
     font-size: 0.8em;
     letter-spacing: 0.6px;
     white-space: nowrap;
     transition: 0.25s;*/
+}
+.menu ul li:hover
+{
+    /* transition: background #373c52 ease; */
+    background-color: #373c52;
 }
 /* 
 .btnMenu:hover .menu ul li
