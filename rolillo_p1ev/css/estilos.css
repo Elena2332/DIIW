@@ -51,21 +51,19 @@ header
     top: 50%;
     width: fit-content;
 }
-.btnMenu
+#btnMenu
 {
     position: relative;
     left: 80%;
 
     border-radius: 7px;
-    background-color: #FAA228;
+    /* background-color: #FAA228; */
 }
 
 .menu
 {
-    /* display: flex;
-    align-self: flex-end; */
     position: absolute;
-    right: 200px;
+    right: -40%;
     width: fit-content;
     /* padding: 10px; */
     /* border: 1px dashed rgb(150, 166, 233); */
@@ -80,29 +78,21 @@ header
 .menu ul li
 {
     list-style: none;
-    /* width: 100%; */
     margin: 10px 0px;
     padding: 10px 15px;
-    /*position: absolute;
-    left: 38px;
-    overflow: hidden;
-    font-size: 0.8em;
-    letter-spacing: 0.6px;
-    white-space: nowrap;
-    transition: 0.25s;*/
 }
 .menu ul li:hover
 {
     /* transition: background #373c52 ease; */
     background-color: #373c52;
 }
-/* 
-.btnMenu:hover .menu ul li
+
+.deslizarIzq
 {
-    width: auto;
-    padding: 0 20px;
-    overflow: visible;
-} */
+    background-color: #FAA228;
+    right: 0%;
+    transition: position 1s;
+} 
 
 
 /*** contenido ***/
