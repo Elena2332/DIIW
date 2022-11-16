@@ -25,13 +25,14 @@ header
     grid-column: 1/2;
     grid-row: 1/2;
 
-    height: 50vh;
+    height: 40vh;
 
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 
     background: url(../img/fondo2V2.jpg) no-repeat;
+    background-size: cover;
     text-align: center;
     font-size: 5vh;
 }
