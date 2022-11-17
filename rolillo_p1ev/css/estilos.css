@@ -7,7 +7,27 @@
 
         #373c52
 
-        rgb(150, 166, 233)
+        #96a6e9  moradito
+
+        logo
+        #0d1214   -negro
+        #e4ddc5   -arena
+        #505656   -gris
+        #8fc1d7   -azulillo
+        #649db5   -azul
+        #8292af   -morado
+        #9b907b   -marron 
+
+    demostracion variables 
+    :root
+    {
+        --prin: rgb(200,150,210);
+        --blan: #ffffff;
+    }
+    body 
+    {
+        background-color: var(--prin);
+    }
 */
 
 body
@@ -45,7 +65,7 @@ header
     flex-direction: row;
     justify-content: space-between;
 
-    padding: auto 15%;
+    padding: 0 10%;
 }
 .logo 
 {
@@ -81,12 +101,11 @@ header
 .menu
 {
     display: none;
-    position: absolute;
-    top: 4%;
+    /* position: absolute; */
+    /* top: 4%; */
     width: fit-content;
-    /* padding: 10px; */
-    /* border: 1px dashed rgb(150, 166, 233); */
-    background-color: rgb(150, 166, 233);
+    /* border: 1px dashed #96a6e9; */
+    /* background-color: #96a6e9; */
 }
 .menu ul
 {
@@ -100,9 +119,9 @@ header
     margin: 10px 0px;
     padding: 10px 15px;
 }
-.menu ul li:hover
+/*.menu ul li:hover
 {
-    /* transition: background #373c52 ease; */
+    transition: background #373c52 ease;
     background-color: #373c52;
 }
 
@@ -112,7 +131,7 @@ header
     right: 0%;
     transition: position 1s;
 } 
-
+*/
 
 /*** contenido ***/
 main
@@ -133,14 +152,14 @@ footer
     grid-row: 3/4;
 
     width: 100%;
-    margin-top: 10px;
-    padding-top: 10px;
+    height: fit-content;
     background-image: radial-gradient(rgb(250, 235, 221) 3%, darkgrey 97%, darkgrey 0%);
 }
 .iconofooter
 {
     width: 70%;
-    margin: auto;
+    height: fit-content;
+    margin: 20px auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -171,7 +190,7 @@ footer
 }
 input,textarea,select
 {
-    border: 1px solid rgb(150, 166, 233); 
+    border: 1px solid #96a6e9; 
     border-radius: 5px;
 }
 
@@ -192,6 +211,102 @@ input:focus, textarea:focus, select:focus
     border: 0px ;
     border-radius: 10px;
 }
+
+
+/***********************************/
+/******* PANTALLA  MEDIANA ********/
+/*********************************/
+@media screen and (min-width: 500px) 
+{
+    /*** LOGO y MENU ***/
+    header
+    {
+        padding: 0% 5%;
+        font-size: 1.1em;
+    }
+    #btnMenu
+    {
+        display: none;
+    }
+    .menu
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu ul 
+    {
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .menu ul li 
+    {
+        /* padding: 0%; */
+        margin: 0%;
+    }
+
+
+    /*** SUGERENCIAS ***/
+    .sugerencias 
+    {
+        width: 400px;
+        margin: 20px auto 40px auto;
+    }
+    form
+    {
+        width: 400px;
+        padding: 25px;
+        border: 1px solid #96a6e9;
+        border-radius: 15px;
+    }
+    
+
+
+}
+
+
+
+
+/***********************************/
+/******* PANTALLA  GRANDE *********/
+/*********************************/
+@media screen and (min-width: 820px) 
+{
+    /*** LOGO y MENU ***/
+    header
+    {
+        padding: 0% 5%;
+        font-size: 1.2em;
+    }
+    .menu
+    {
+        width: 80%;
+    }
+}
+
+
+
+
+/***********************************/
+/*********   IMPRESION   **********/
+/*********************************/
+@media screen and (min-width: 800px) 
+{
+
+    
+}
+
+
+
+
+
+
+
+
 
 
 
