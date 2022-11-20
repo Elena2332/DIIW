@@ -50,8 +50,13 @@ a
 {
     text-decoration: none;
     color: #FAA228;
+    transition: text-shadow 0.5s;
 }
 
+a:hover 
+{
+    text-shadow: 2px 2px 4px grey;
+}
 
 
 
@@ -371,6 +376,11 @@ main[class="detalles"]
     margin: auto;
     background: url(../img/descarga.png) center no-repeat, #96a6e9;
     border-radius: 15px;
+    transition: background 0.5s;
+}
+.botones .btnDescarga:hover
+{
+    background: url(../img/descarga.png) center no-repeat, #616fa7;
 }
 .botones .btnVer
 {
@@ -389,6 +399,31 @@ main[class="detalles"]
 {
     padding: 10px;
 }
+
+
+/*** PROCESO ***/
+.proceso 
+{
+    width: 100%;
+    justify-content: center;
+    padding: 30px auto;
+}
+.procesando
+{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    color: white;
+    background-color: brown;
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding: 10px;
+    width: 30%;
+    animation: giro 4s 0s infinite normal linear;
+}
+
+
+
 
 
 
@@ -448,6 +483,48 @@ main[class="detalles"]
     {
         width: 60%;
     }
+
+    /*** DETALLES ***/
+    .detallePlantilla
+    {
+        width: 90%;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        gap: 10px;
+        margin: 0px auto 40px auto;
+    }
+    .detallePlantilla .detalleImg
+    {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        
+        width: 100%;
+        margin: auto;
+    }
+    .detallePlantilla .datos
+    {
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+    .detallePlantilla .datos .nombrePersonaje
+    {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .detallePlantilla .botones 
+    {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 100%;
+        height: 60px;
+    }
+    .botones .btnDescarga
+    {
+        width: 90%;
+        height: 100%;
+    }
+
 }
 
 
@@ -490,6 +567,22 @@ main[class="detalles"]
     #menuBajo
     {
         width: 40%;
+    }
+
+    /*** DETALLES ***/
+    .detallePlantilla .detalleImg
+    {
+        grid-row: 1/3;
+    }
+    .detallePlantilla .datos
+    {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin: auto;
+    }
+    .detallePlantilla .botones
+    {
+        grid-column: 2/3;
     }
 }
 
@@ -542,6 +635,14 @@ main[class="detalles"]
 }
 
 
+@keyframes giro
+{
+    0%{transform: rotateY(0deg);} 
+    25%{transform: rotateY(90deg);}
+    50%{transform: rotateY(180deg);}
+    75%{transform: rotateY(270deg);}
+    100%{transform: rotateY(360deg);}
+}
 
 
 
