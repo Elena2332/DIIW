@@ -4,11 +4,13 @@
 {
     --azulillo: #8fc1d7;
     --azul: #649db5;
+    --azulOscuro: #507d90;
     --arena: #e4ddc5;
     --marron: #9b907b;
     --gris: #505656;
     --negro: #0d1214;
     --morado: #5e6e8b;
+    --mediofondo: #2d2f4abb;
 }
 
 body
@@ -24,7 +26,7 @@ body
     /* gap: 10px; */
 
     background-color: var(--gris);   
-    color: var(--azulillo);
+    color: var(--arena);
 }
 
 a
@@ -137,7 +139,7 @@ main
     position:fixed;
     width:100%;
     z-index:1000;
-    background-color:#D0D0D0;
+    background-color:var(--azul);
 }
 
 
@@ -149,7 +151,7 @@ footer
 
     width: 100%;
     height: fit-content;
-    background-image: radial-gradient(rgb(250, 235, 221) 3%, darkgrey 97%, darkgrey 0%);
+    background-image: radial-gradient( darkgrey 3%, var(--gris) 97%, var(--gris) 0%);
 }
 .iconofooter
 {
@@ -186,13 +188,13 @@ footer
 }
 input,textarea,select
 {
-    border: 1px solid #96a6e9; 
+    border: 1px solid var(--morado); 
     border-radius: 5px;
 }
 
 input:focus, textarea:focus, select:focus
 {
-    border: 1px solid #FAA228;   
+    border: 1px solid var(--gris);   
 }
 
 .sugerencias textarea
@@ -208,13 +210,23 @@ input:focus, textarea:focus, select:focus
 }
 .sugerencias .envio button
 {
+    width: 100%;
+    padding: 15px;
     margin-top: 15px;
-    padding: 10px;
-    border: 0px ;
+    border: 0px;
     border-radius: 10px;
+    background-color: var(--azulillo);
+    color: var(--negro);
+    transition: background 0.5s, border 0.3s;
+}
+.sugerencias .envio button:hover
+{
+    background-color: var(--azul);
+    border: 2px solid var(--azulOscuro)
 }
 .sugerencias .envio img
 {
+    display: none;
     visibility: hidden;
     padding: 0%;
     position: relative;
@@ -280,7 +292,7 @@ main[class="plantillas"]
     width: 92%;
     height: 25%;
     border-radius: 0px 0px 15px 15px;
-    background-color: #373c52c7;
+    background-color: var(--mediofondo);
     padding: 10px;
     font-size: 1.2em;
     font-weight: bold;
@@ -299,7 +311,7 @@ main[class="plantillas"]
     margin: auto;
     border: 1px solid #96a6e9;
     border-radius: 15px;
-    background-color: #373c52c7;
+    background-color: var(--mediofondo);
 
     display: flex;
     flex-direction: row;
@@ -360,13 +372,13 @@ main[class="detalles"]
     width: 85%;
     height: 100%;
     margin: auto;
-    background: url(../img/descarga.png) center no-repeat, #96a6e9;
+    background: url(../img/descarga.png) center no-repeat, var(--azulillo);
     border-radius: 15px;
     transition: background 0.5s;
 }
 .botones .btnDescarga:hover
 {
-    background: url(../img/descarga.png) center no-repeat, #616fa7;
+    background: url(../img/descarga.png) center no-repeat, var(--azul);
 }
 .botones .btnVer
 {
@@ -460,7 +472,7 @@ main[class="detalles"]
     {
         width: 400px;
         padding: 25px;
-        border: 1px solid #96a6e9;
+        border: 1px solid var(--morado);
         border-radius: 15px;
     }
     
@@ -618,17 +630,17 @@ main[class="detalles"]
 }
 @keyframes avion
 {
-    0%{  transform: translateX(-10%)  rotate(8deg); } 
-    10%{ transform: translateX(-10%)  rotate(8deg); }
-    20%{ transform: translateX(-150%) rotate(-8deg);}
-    30%{ transform: translateX(-80%)  rotate(8deg); }
-    40%{ transform: translateX(-135%) rotate(-8deg);}
-    50%{ transform: translateX(-250%) rotate(8deg); }
-    60%{ transform: translateX(-300%) rotate(-8deg);}
-    70%{ transform: translateX(-375%) rotate(8deg); }
-    80%{ transform: translateX(-410%) rotate(-8deg);}
-    90%{ transform: translateX(-500%) rotate(8deg); }
-    100%{transform: translateX(-600%) rotate(-8deg);}
+    0%{  transform: translateX(10%)  rotate(8deg); } 
+    10%{ transform: translateX(10%)  rotate(8deg); }
+    20%{ transform: translateX(150%) rotate(-8deg);}
+    30%{ transform: translateX(80%)  rotate(8deg); }
+    40%{ transform: translateX(135%) rotate(-8deg);}
+    50%{ transform: translateX(250%) rotate(8deg); }
+    60%{ transform: translateX(300%) rotate(-8deg);}
+    70%{ transform: translateX(375%) rotate(8deg); }
+    80%{ transform: translateX(410%) rotate(-8deg);}
+    90%{ transform: translateX(500%) rotate(8deg); }
+    100%{transform: translateX(600%) rotate(-8deg);}
 }
 
 
@@ -641,129 +653,3 @@ main[class="detalles"]
     100%{transform: rotateY(360deg);}
 }
 
-
-
-
-
-/* 
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: minmax(2% 1fr) 5fr 2fr;  
-
-a
-{
-    text-decoration: none;
-}
-
-header
-{
-    grid-column: 1/4;
-    grid-row: 1/2;
-    
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr;
-}
-
-.logo
-{
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-
-.menu
-{
-    grid-column: 2/3;
-    grid-row: 1/2;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.menu li
-{
-    list-style: none;
-}
-
-
-.login
-{
-    grid-column: 3/4;
-    grid-row: 1/2;
-}
-
-
-footer
-{
-    grid-column: 1/4;
-    grid-row: 3/4;
-
-    margin-top: 10px;
-    padding: 10px;
-    background-image: radial-gradient(white 3%, darkgrey 97%, darkgrey 0%);
-}
-.iconofooter
-{
-    width: 30%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.iconofooter a img
-{
-    height: 25px;
-}
-
-
-/***  Sugerencias  ***/
-/*
-main
-{
-    grid-column: 2/3;
-    grid-row: 2/3;     
-}
-.sugerencias
-{   
-    width: 65%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: auto;
-}
-
-.sugerencias label
-{
-    grid-column: 1/2;
-    margin-bottom: 10px;
-    text-align: right;
-    padding-right: 10px;
-}
-input,textarea,select
-{
-    grid-column: 2/3;
-    padding: 4px;
-    margin-bottom: 10px;
-    border: 1px solid gray;
-    border-radius: 5px;
-}
-input:focus, textarea:focus, select:focus
-{
-    border: 2px solid rgb(77, 93, 157);   
-}
-textarea
-{
-    height: 100px;
-}
-
-.sugerencias button
-{
-    grid-column: 1/2;
-    padding: 6%;
-    justify-content: center;
-    background-color: rgb(77, 93, 157);  
-}
-
-.sugerencias button:hover .avion
-{
-    animation: avion 2s 0s 1;
-} */
