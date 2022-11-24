@@ -11,30 +11,62 @@
     <form>
         <fieldset class="partePrim">
             <legend>Primera parte del formulario</legend>
-            <label>Trato:</label>   <input type="text">
-            <label>Email:</label>   <input type="email">
-            <label>URL:</label>   <input type="url">
-            <label>Selecciona una fecha:</label>   <input type="date">
-            <label>Suba los archivos:</label>   <input type="file">
-            <label>La hora:</label>   <input type="time">
-            <label>El dia:</label>   <input type="datetime-local">
-            <label>El mes:</label>   <input type="month">
+
+            <label>Trato:</label> 
+             <div><input type="text" list="tratoList">
+                <datalist id="tratoList"><option value="Señor"></option><option value="Señora"></option></datalist>
+            </div>
+
+            <label>Email:</label> 
+             <div><input type="email" required autofocus></div>
+
+            <label>URL:</label>   
+             <div><input type="url" required></div>
+
+            <label>Selecciona una fecha:</label>   
+             <div><input type="date" multiple></div>
+
+            <label>Suba los archivos:</label>   
+             <div><input type="file"></div>
+
+            <label>La hora:</label>   
+             <div><input type="time"></div>
+
+            <label>El dia:</label>   
+             <div><input type="datetime-local"></div>
+
+            <label>El mes:</label>   
+             <div><input type="month"></div>
         </fieldset>
 
         <fieldset class="parteSeg">
             <legend>Segunda parte del formulario</legend>
-            <label>La semana:</label>   <input type="week">
-            <label>Un numero:</label>   <input type="number">
-            <label>Un rango:</label>   <input type="range">
-            <label>Tu telefono:</label>   <input type="tel">
-            <label>Busqueda:</label>   <input type="search">
-            <label>Que color:</label>   <input type="color">
-            <label>Introduce una contraseña:</label>   <input type="password">
+
+            <label>La semana:</label>   
+             <div><input type="week"></div>
+
+            <label>Un numero:</label>   
+             <div><input type="number" min="0" max="100"></div>
+
+            <label>Un rango:</label>   
+             <div><input type="range" min="0" max="20" step="2"></div>
+
+            <label>Tu telefono:</label>   
+             <div><input type="tel"></div>
+
+            <label>Busqueda:</label>   
+             <div><input type="search"></div>
+
+            <label>Que color:</label>   
+             <div><input type="color"></div>
+
+            <label>Introduce una contraseña:</label>   
+             <div><input type="password" pattern="[0-9]{1}[A-Z]{3}"></div>
         </fieldset>
 
         <fieldset class="parteTer">
-            <label>1ª Parte:</label>   <meter range=""></meter>
-            <label>2ª Parte:</label>   <meter range=""></meter>
+            <label>1ª Parte:</label>   <progress min="0" max="8" value="4"></progress>
+            <label>2ª Parte:</label>   <meter low="0" optimum="7" high="3" value="0"></meter>
             <input type="submit" value="Enviar">
         </fieldset>
     </form>

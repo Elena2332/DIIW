@@ -1,3 +1,7 @@
+body
+{
+    background-color: #d6e9f3;
+}
 form
 {
     display: flex;
@@ -6,17 +10,65 @@ form
     justify-content: space-around;
 }
 
-.partePrim
+.partePrim, .parteSeg
 {
-    
+    border-radius: 15px;
+    padding: 15px;
+    margin: 20px;
+    width: 40%;
+    background-color: #d9e2e7;
+}
+.partePrim, .parteSeg, .parteTer
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    gap: 10px;
 }
 
-.parteSeg
+label
 {
-    
+    text-align: end;
+}
+
+legend
+{
+    padding: 5px;
+    border: 1px solid rgb(73, 73, 73);
+    background-color: #bad3e0;
+}
+
+input[type="number"]
+{
+    width: 60px;
 }
 
 .parteTer
 {
-    
+    border-radius: 15px;
+    box-shadow: 4px 4px 2px grey;
+    padding: 15px;
+}
+progress, meter::-webkit-meter-bar 
+{    
+    height: 1.4em;
+    border-radius: 0%;
+}
+
+progress::-webkit-progress-value 
+{
+    background-color: aquamarine;
+}
+progress::-webkit-progress-bar
+{
+    background-color: #d6e9f3;
+    border: 1px solid grey;
+}
+meter::-webkit-meter-suboptimum-value
+{
+    background-color: red;
+}
+meter::-webkit-meter-bar
+{
+    background-color: darkgrey;
 }
