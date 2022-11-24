@@ -1,0 +1,72 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    
+}
+table 
+{
+    border:3px solid green; 
+    border-collapse: collapse;
+    margin: 50px auto;
+}
+th
+{
+    border: 1px solid #333;
+    background-color: #F5F5F5;
+    line-height: 2.5em;
+    padding: 0px 0.3em;
+}
+tbody th 
+{
+    text-align: left;
+    width: 150px;
+    background-color: #e6f3ff;
+}
+tbody span 
+{
+    position: relative;
+    left: 40px;
+}
+tbody img
+{
+    position: relative;
+    left: 20px;
+}
+td
+{
+    border: 1px solid #333;
+    line-height: 2.5em;
+    width: 80px;
+}
+tbody tr:nth-of-type(2n) td
+{
+    background-color: #FFFFCC;
+}
+tbody tr:nth-of-type(2n+1) td
+{
+    background-color: #CCFFCC;
+}
+
+tbody tr:nth-of-type(2n):hover td
+{
+    background-color: #FFFF66;
+}
+tbody tr:nth-of-type(2n+1):hover td
+{
+    background-color: #66FFCC;
+}
+
+caption
+{
+    caption-side: bottom;
+    width: 200px;
+    
+    border-bottom: 4px solid green;
+    margin: 20px auto 4px auto;
+    text-transform: uppercase;
+
+    font-weight: bold;
+    color: green;
+
+}

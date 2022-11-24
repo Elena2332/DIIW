@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ejercicio4.css">
+    <title>Ejercicio4</title>
+</head>
+<body>
+    <h1>Formulario de alta</h1>
+    <form action="">
+        <div class="apartado">
+            <h2>Nombre y apellidos<span>*</span></h2>
+            <div class="conteiner">
+                <input type="text"/> <label>Nombre</label>
+                <input type="text"/> <label>Primer Apellido</label>
+                <input type="text"/> <label>Segundo Apellido</label>
+            </div>
+        </div>
+        <div class="apartado">
+            <h2>Direccion<span>*</span></h2>
+            <div class="conteiner">
+                <input type="text"/> <label>Calle, numero, piso, puerta</label>
+                <div class="seguido">
+                    <div><input type="text"/> <label>CodigoPostal</label></div>
+                    <div><input type="text"/> <label>Municipio</label></div>
+                </div>
+                <div class="seguido">
+                    <div><select><option>--</option></select> <label>Provincia</label></div>
+                    <div><select><option>--</option></select> <label>Pais</label></div>
+                </div>
+            </div>
+        </div>
+        <div class="apartado">
+            <h2>Email<span>*</span></h2>
+            <div class="conteiner">
+                <input type="email"/> <label>usuario@servidor.com</label>
+            </div>
+        </div>
+        <div class="apartado">
+            <h2>Telefono<span>*</span></h2>
+            <div class="conteiner seguido">
+                <div><input type="number"/> <label>Fijo</label></div>
+                <div><input type="number"/> <label>Movil</label></div>
+            </div>
+        </div>
+        <div class="divBoton">
+            <button>Darme de alta --></button>
+        </div>
+    </form>
+</body>
+</html>
