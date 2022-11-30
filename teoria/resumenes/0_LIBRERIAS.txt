@@ -1,0 +1,18 @@
+·Fuentes-Iconos
+  -Tipografia:   https://www.creativosonline.org/efectos-texto-css.html
+  -Font Awesome:   https://fontawesome.com/icons
+  -IcoMoon:      https://icomoon.io
+
+·Aninmaciones
+  -Animate:    https://animate.style/
+  -Anime.js:    https://animejs.com/documentation/#customEasingFunction
+  -Fancybox:    http://fancybox.net/
+  -Swiper:     https://swiperjs.com//
+
+·Carousels
+  -Carousel:    https://owlcarousel2.github.io/OwlCarousel2/index.html
+  -Elastislide:   https://tympanus.net/codrops/2011/09/12/elastislide-responsive-carousel/ 
+
+·Como usar:
+  -Iconos-tipografia:   https://ed.team/blog/guia-definitiva-de-web-icon-fonts
+  -Normalice:    http://www.falconmasters.com/recursos-herramientas/normalize-css/
