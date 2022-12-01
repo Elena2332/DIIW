@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: url(../img/Fondo.png) 
+    center center;
+    background-size: cover;
+}
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.pos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.mountain5 {
+    background: url(../img/M1.png) 
+    center center;
+    background-size: cover;
+    transform: scale3d(1.5, 1.0, 1.4);
+    opacity: 0.2;
+    animation: scaler 0.8s ease-out;
+    animation-fill-mode: forwards;
+}
+.mountain4 {
+    background: url(../img/m2.png) 
+    center center;
+    background-size: cover;
+    transform: scale3d(1.4, 1.3, 1.3);
+    opacity: 0.1;
+    animation: scaler 1.2s ease-out;
+    animation-fill-mode: forwards;
+}
+.mountain3 {
+    background: url(../img/m3.png) 
+    center center;
+    background-size: cover;
+    transform: scale3d(1.3, 1.1, 1.2);
+    opacity: 0.2;
+    animation: scaler 1.3s ease-out;
+    animation-fill-mode: forwards;
+}
+.mountain2 {
+    background: url(../img/m4.png) 
+    center center;
+    background-size: cover;
+    transform: scale3d(1.2, 1.1, 1.1);
+    opacity: 0.1;
+    animation: scaler 1.4s ease-out;
+    animation-fill-mode: forwards;
+}
+.mountain1 {
+    background: url(../img/m5.png) 
+    center center;
+    background-size: cover;
+    transform: scale3d(1.0, 1.3, 1.0);
+    opacity: 0.1;
+    animation: scaler 1.5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveUp {
+    100% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes scaler {
+    100% {
+        transform: scale3d(1, 1, 1);
+        opacity: 1;
+    }
+}

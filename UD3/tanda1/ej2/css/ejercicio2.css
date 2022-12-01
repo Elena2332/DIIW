@@ -1,0 +1,73 @@
+/*Estilos generales*/
+/*Por lo general tendras estos estilos en tu proyecto*/
+html,
+body {
+  background-color: black;
+  font-family: sans-serif;
+}
+
+/*Estilos parallax*/
+.container {
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
+  perspective: 3px;
+  
+
+}
+
+section {
+  background-size: cover;
+  color: rgb(4, 66, 119);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallax-bg{
+  background-position: center center;
+  transform: translateZ(-0.5px) scale(2);
+  background-size: cover;
+  z-index: -1;
+  height: 50vh;
+}
+.parallax-content{
+  color: rgb(236, 230, 248);
+  z-index: -1;
+  transform: translateY(-25vh) translateZ(0px) scale(1);
+  padding-left:30px;
+  padding-right:30px;
+  text-align:center;
+}
+.no-parallax-section{
+  height: 50vh;
+}
+.no-parallax-content{
+  text-align:center;
+  padding:30px;
+}
+/*Colores de fondo*/
+.bg-1{
+  background:linear-gradient(90deg, rgb(35, 34, 59) 0%, rgb(241, 153, 37) 0%, rgb(200, 255, 0) 100%);
+}
+.bg-2{
+  background:linear-gradient(90deg, rgb(106, 207, 147) 0%, rgb(236, 205, 103) 100%);
+}
+
+footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: aliceblue;
+}
+footer span
+{
+    font-size: 0.6em;
+    letter-spacing: 2px;
+}
+p
+{
+  font-weight: bold;
+}

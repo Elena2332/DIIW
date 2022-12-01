@@ -1,0 +1,32 @@
+body
+{
+    margin: 0%;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.galeria
+{
+    width: fit-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.dos
+{
+    grid-column: 1/4;
+}
+
+h1
+{
+    width: 100%;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: black;
+    color: antiquewhite;
+}
