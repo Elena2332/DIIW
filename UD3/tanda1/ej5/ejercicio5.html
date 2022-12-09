@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/ejercicio5.css">
+    <title>Ejercicio5</title>
+</head>
+<body>
+    <div class="owl-carousel">
+        <div><img src="img/i1.jpg"/></div>
+        <div><img src="img/i2.jpg"/></div>
+        <div><img src="img/i3.jpg"/></div>
+        <div><img src="img/i4.jpg"/></div>
+        <div><img src="img/i5.jpg"/></div>
+        <div><img src="img/i6.jpg"/></div>
+        <div><img src="img/i7.jpg"/></div>
+        <div><img src="img/i8.jpg"/></div>
+        <div><img src="img/i9.jpg"/></div>
+        <div><img src="img/i10.jpg"/></div>
+        <div><img src="img/i11.jpg"/></div>
+        <div><img src="img/i12.jpg"/></div>
+    </div>
+</body>
+ <!-- <script src="owlcarousel/owl.carousel.min.js"></script> -->
+ <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+ <script>
+    $('.owl-carousel').owlCarousel({
+        margin: 10,
+        loop: true,
+        autoplay: true,
+        nav: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        responsive: {
+            // a partir de 0 
+            0 : {
+                items: 1
+            },
+            // a partir de 520 
+            520 : {
+                items: 2
+            },
+            // a partir de 1040 
+            1040 : {
+                items: 3
+            },
+            // a partir de 1300
+            1300 : {
+                items: 4
+            }
+        }
+    })
+ </script>
+</html>
