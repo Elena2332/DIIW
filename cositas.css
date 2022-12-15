@@ -1,12 +1,128 @@
+/* alineaciones */
 .alinearCentro
 {
-    text-align: center;
+    text-align: center;   /* left right justify */
     align-items: center;
-    justify-content: center;
+    justify-content: center;   /* space-between  space-around */
     margin: auto;
     margin: 0px auto;
 
     position: absolute;
     top: 50%;
     left: 50%;
+
+    vertical-align: baseline;  /* alineacion  UD2 tanda2 ej13 */
+}
+
+/* position */
+.posicion
+{
+    z-index: 1;   /* cuanto mas pequeño mas abajo */
+
+    position: relative;   /* UD2 tanda3 ej2 y ej3 */
+    top: 60px; 
+    right: 100px; 
+
+    position: absolute;   /* UD2 tanda3 ej4 y ej7 */
+    top: 80px;
+    left: 90%;
+
+    float: left;  /* imagenes y cajas */
+    clear: right;  /* ignora las cosas que flotan */
+
+    caption-side: bottom;  /* caption table */
+
+    visibility: hidden;  /* visible */
+    display: none;  /* desaparece */
+}
+
+/* formato texto */
+.texto 
+{
+    text-indent: 60px;  /* sangria */
+    line-height : 2em;  /* interlineado */
+    font-variant: small-caps;   /* mayusculas pequeñas */
+    text-transform: capitalize;   /* mayusculas */ 
+    text-decoration: none;   /* subrayado */
+    font-style: italic;
+    font-weight: normal;
+    font-family: Verdana;
+    list-style-type: none;  /*  url(../imagenes/clock.png)   quita formato lista o url(ruta imagen) */
+    text-shadow: 1px 1px 2px red, 5px 5px 3px blue;    /* x y difuminacion color */
+}
+
+
+/* texto en diferentes columnas */
+.columnas-texto
+{
+    margin-bottom: 20pt;
+    padding: 7pt;
+    border-radius: 20pt;
+    background-color: rgb(183, 177, 168);
+    column-count: 3;
+    column-rule: 2px dashed blue;  /* dashed dotted solid */
+}
+
+
+/* bordes */
+.bordes
+{
+    border-image: url(../imagenes/bordes.png) 33% fill;  /* borde de imagenes  UD2 tanda2 ej18 */
+    border-radius: 10pt 25pt 25pt 10pt;   /* empieza por arriba-izquierda, arriba-derecha... */
+    border-radius: 20pt 0pt;   /* boreda los opuestos */
+    box-shadow: 0px 0px 20px lime, 0px 0px 20px red inset;  /* inset: sombras internas */
+}
+
+
+/* fondos */
+.fondos
+{
+    background-image: url(../imagenes/reloj.png);
+    background-repeat: no-repeat;
+    background-position: right top;  /* x y _._ tambien admite porcentajes */
+    background-origin: border-box;  /* padding-box content-box  _._  comienzo del fondo */
+    
+    /* varias imagenes y color */
+    background: url(../imagenes/madera1.png) no-repeat right bottom, 
+            url(../imagenes/logo1.png) no-repeat right top,
+            url(../imagenes/logo1.png) no-repeat left top,
+            url(../imagenes/logo1.png) no-repeat left bottom,
+            darksalmon;  
+
+    background-image: url(../imagenes/logo1.png), url(../imagenes/logo1.png);
+    background-repeat: no-repeat;
+    background-position: left top, center center;
+    background-size: 100px 100px , 200px 200px, 700px 550px;
+
+}
+
+
+/* imagenes */
+.img
+{
+    cursor: hand;   /* apariencia del raton */
+    object-fit: cover;  /* fill contain */
+}
+
+
+/* filtros y animaciones */
+.filtros
+{
+    filter: brightness(3);  /* UD2 tanda7 ej1 */
+    transition: width 2s, background 2s;   /* que transiciona y cuanto tarda */
+    transform: scale(1.8);  /* cambio */
+    
+    animation: rodeo;
+    animation-duration: 4s;
+    animation: giro 4s 0s infinite normal linear;
+}
+
+@keyframes rodeo
+{
+    0%{transform: translate(0px);}
+    25%{transform: translate(500px, 0px);}
+    50%{transform: translate(500px, 500px);}
+    75%{transform: translate(0px, 500px);}
+    100%{transform: translate(0px);}
+    /* 98%{transform: translateY(0px);} */
 }
