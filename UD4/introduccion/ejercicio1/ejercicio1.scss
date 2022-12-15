@@ -1,0 +1,85 @@
+// VARIABLES
+$rojo: red;
+$gris: grey;
+$fondo: slategrey;
+
+body {
+    padding: 1em 2em;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+}
+li {
+    text-align: center;
+    line-height: 2;
+    background: $fondo;
+}
+div {
+    width: 12em;
+    float: left;
+    margin-right: 2em;
+}
+hr {
+    clear: both;
+    padding-top: 1em;
+    border: 0;
+    border-bottom: 1px solid $gris;
+}
+.rojo {
+      color: $rojo;
+}
+  
+
+// Agrupar reglas de elementos
+.uno
+{
+    li 
+    {
+        :nth-child(1)
+        {
+            background: lightsteelblue;
+        }
+    }
+}
+.dos 
+{
+    :nth-child(2)
+    {
+        :nth-child(3) 
+        {
+            background: lightsteelblue;
+        }
+    } 
+}
+    
+.tres :nth-child(odd)
+{
+    li:nth-child(-n+3) 
+    {
+        background: lightsteelblue;
+    } 
+} 
+
+
+
+//Mixin
+@mixin xin($pos, $msj, $color)
+{
+    &:#{$pos}
+    {
+        content: "#{$msj}";
+        color: #{$color};
+    }
+}
+
+.tres 
+{
+    @include xin("before","Soy previo al bloque 3","blue");
+}
+#i1
+{
+    @include xin("after","Soy previo al bloque 2","green");
+    border: 2;
+}
