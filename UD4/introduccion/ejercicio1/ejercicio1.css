@@ -30,8 +30,6 @@ hr {
   color: red;
 }
 
-
-/*anidar elementos*/
 .uno li :nth-child(1) {
   background: lightsteelblue;
 }
@@ -49,8 +47,6 @@ hr {
   color: blue;
 }
 
-
-/*mixin*/
 #i1 {
   border: 2;
 }
