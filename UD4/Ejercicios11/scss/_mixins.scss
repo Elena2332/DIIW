@@ -1,0 +1,14 @@
+@mixin borde-medio-redondo
+{
+    border-radius: 0px 15px 0px 15px;
+    color: $blanco;
+}
+
+@mixin flex($direccion,$alinV,$alinH)
+{
+    display: flex;
+    flex-direction: #{$direccion};
+    justify-content: #{$alinH};
+    align-items: #{$alinV};
+}
+

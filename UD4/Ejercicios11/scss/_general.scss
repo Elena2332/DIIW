@@ -1,0 +1,22 @@
+header
+{
+    nav
+    {
+        @include flex("row","center","center");
+        color: $blanco;
+        ul li:hover 
+        {
+            @include borde-medio-redondo;
+            background: $degradado;
+        }
+    }
+    .logotipo
+    {
+        margin: auto;
+        width: 350px;
+        img 
+        {
+            width: 100%;
+        }
+    }
+}
