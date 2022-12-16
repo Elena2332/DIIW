@@ -1,0 +1,453 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap'); */
+
+@font-face {
+    font-family: Poor Story;
+    src: url(../font/PoorStory-Regular.ttf);
+}
+
+/* #6EEB73 #1E9614  #6b3c50  */
+body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poor Story';
+    
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
+
+header {
+    margin: 0;
+    background-image: url(../img/fondo2V2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+    color: white;
+    text-shadow: gray 0.2em -0.2em;
+    font-size: 5vw;
+    padding: auto;
+    /* align-items: center; */
+}
+
+section img{
+    display: none;
+}
+
+nav{
+    background-image: linear-gradient(to right, #6b3c50, #1E9614 , white);
+    width: 100vw;
+    font-size: 4vw;
+    padding: 3vw;
+}
+
+nav li{
+    list-style: none;
+    margin-left: 3vw;
+    margin-bottom: 2vw;
+}
+
+nav li a{
+    text-decoration: none;
+    color: white;
+    transition: all 1.5s;
+}
+
+nav li:nth-of-type(4) ul{
+    display: none;
+}
+
+nav li:hover a{
+    color: #6b3c50;
+    font-size: 150%;
+    margin-left: 30%;
+}
+
+nav li:nth-of-type(4):hover ul{
+    display: block;
+    margin: 0;
+}
+
+nav li:nth-of-type(4):hover ul a{
+    color: white;
+    margin-left: 7%;
+}
+
+nav li:nth-of-type(4):hover ul li{
+    margin-left: 0;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+
+nav li:nth-of-type(4):hover ul li:nth-of-type(1){
+    margin-left: -8%;
+}
+
+nav li:nth-of-type(4) ul li{
+    transition: all 1s;
+}
+
+nav li:nth-of-type(4) ul li:hover{
+    background-color: #6EEB73;
+    border: 1vw solid #6b3c50;
+    font-size: 125%;
+}
+
+
+
+main p{
+    display: none;
+}
+main{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+
+    gap: 2vw;
+    margin: 2vw;
+    
+}
+
+main section{
+    background-image: linear-gradient(to right, #1E9614, #6b3c50);
+    border: black solid 0.3vw;
+    text-align: center;
+    color: white;
+    font-size: 2vw;
+    width: 81%;
+}
+
+main section:hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #6EEB73;
+    background-image: none;
+    color: #6b3c50;
+}
+
+main section:hover p{
+    display: inline-block;
+}
+
+main section:hover img{
+    display: inline-block;
+    width: 7vw;
+    align-self: center;
+
+}
+
+footer{
+    border-top: 0.3vw solid #6EEB73;
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 3vw;
+}
+
+footer img{
+    width: 15vw;
+}
+
+
+
+
+@media (min-width: 550px) and (max-width:900px){
+    header{
+        font-size: 3vw;
+    }
+
+    nav {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+        background-image: none;
+    }
+
+    nav li{
+        background-color: #1E9614;
+        font-size: 3vw;
+        padding: 1vw;
+        margin: 1vw;
+        
+    }
+
+    nav li a{
+        transition: all 2s;
+    }
+
+    nav li:nth-of-type(1){
+        margin-left:0vw;
+    }
+
+    nav li:nth-of-type(2){
+        margin-right: 0vw;
+    }
+    
+    nav li:nth-child(even){
+        text-align: end;
+    }
+
+    nav li:hover{
+        background-color: white;
+        color: #6b3c50;
+    }
+
+    nav li:nth-child(even):hover a{
+        margin-right: 30%;
+    }
+
+    nav li:nth-child(3):hover a{
+        margin-left: 23%;
+    }
+
+    nav li:nth-of-type(4):hover li{
+        margin: 0;
+        text-align: end;
+    }
+
+    nav li:nth-of-type(4):hover li a{
+        text-align: end;
+        margin: 0;
+    }
+
+    main{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1.2fr 0.8fr;
+    }
+
+    main section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+    }
+
+    main section img{
+        display: block;
+        width: 15vw;
+    }
+
+    section h1{
+        text-transform: uppercase;
+    }
+    
+    main section:hover {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    main section:hover h1{
+        animation-name: animacionTitulo;
+        animation-iteration-count: 3;
+        animation-duration: 3;
+    }
+
+     @keyframes animacionTitulo {
+        from{
+            top: 0%;
+        }
+        to{
+            top: 30%;
+            /* font-size: 125%; */
+        }
+     }
+
+    main section:hover img:hover{
+        width: 400%;
+        align-self: center;
+        display: inline;
+    }
+
+
+    footer img:nth-child(1){
+        display: none;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer im:nth-child(2){
+        display: inline-block;
+        position: relative;
+    }
+}
+
+
+@media (min-width: 900px){
+    header {
+        background-image: url(../img/fondo1V2.jpg);
+        color: #6EEB73;
+        font-size: 3vw;
+        height: 100%;
+    }
+
+    nav{
+        display: flex;
+        flex: row;
+        justify-content: center;
+        background-image: none;
+        border-bottom: #6EEB73 0.3vw solid;
+        width: 100%;
+    }
+
+    nav li{
+        background-color: #1E9614;
+        box-shadow: #6b3c50 0.1em 0.1em;
+        border-radius: 0.3vw;
+    }
+    
+    nav li a{   
+        padding: 4vw;
+        font-size: 2vw;
+    }
+
+    nav li:hover{
+        background-color: white;
+        color: #6b3c50;
+    }
+
+    nav li:hover a{
+        font-size: 110%;
+        padding-bottom: 2vw;
+    }
+
+    nav li:nth-of-type(4):hover ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+    }
+
+    nav li:nth-of-type(4):hover li{
+        margin: 0.5vw;
+        padding: 0;
+        box-shadow: none;
+        border: #6b3c50 solid 0.1vw;
+    }
+
+
+    nav li:nth-of-type(4):hover li a{
+        font-size: 2vw;
+        padding: 0;
+
+        text-align: center;
+    }
+
+    nav li:nth-of-type(4):hover li:hover{
+        background-color: #6b3c50;
+    }
+
+    nav li:nth-of-type(4):hover li:hover a{
+        font-size: 105%;
+    }
+
+    main 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main section img, section p{
+        display: inline-block;
+    }
+
+    section p{
+        font-size: 3vw;
+    }
+    main section:nth-child(odd) {
+        border: none;
+        background-color: white;
+        background-image: none;
+        display: grid;
+        grid-template-columns: 0.5fr 1.5fr;
+        grid-template-rows: auto auto;
+        color: #6b3c50;
+    }
+
+    main section:nth-child(even) {
+        border: none;
+        background-color: #6b3c50;
+        background-image: none;
+        display: grid;
+        grid-template-columns: 1.5fr 0.5fr;
+        grid-template-rows: auto auto;
+        color: white;
+    }
+
+    main section:nth-child(odd) img{
+        width: 20vw;
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    main section:nth-child(odd) p{
+        grid-row: 2;
+        grid-column: 1;
+        text-align: start;
+    }
+
+    main section:nth-child(even) img{
+        width: 20vw;
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    main section:nth-child(even) p{
+        grid-row: 2;
+        grid-column: 1;
+        text-align: start;
+    }
+
+
+    /* main section:hover{
+        border: none;
+        background-color: white;
+        background-image: none;
+        display: grid;
+        grid-template-columns: 0.5fr 1.5fr;
+        grid-template-rows: auto auto;
+        
+    }
+ */
+
+    main section:hover img{
+        width: 20vw;
+        display: inline-block;
+
+    }
+
+    main section{
+
+    }
+
+    section h1{
+        grid-row: 1/1;
+        grid-column: 1/3;
+        text-align: end;
+        margin-right: 3vw;
+
+        text-shadow: gray 0.3em -0.3em,#1E9614 0.6em -0.6em;
+        /* text-shadow: #1E9614 0.4em -0.4em; */
+        font-size: 5vw;
+    }
+
+    footer img:nth-child(1){
+        order: 2;
+    }
+
+    footer img:nth-child(2){
+        order: 1;
+    }
+
+}
