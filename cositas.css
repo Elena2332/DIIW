@@ -79,7 +79,7 @@
 {
     background-image: url(../imagenes/reloj.png);
     background-repeat: no-repeat;
-    background-position: right top;  /* x y _._ tambien admite porcentajes */
+    background-position: right top;  /* x y  _._  tambien admite porcentajes */
     background-origin: border-box;  /* padding-box content-box  _._  comienzo del fondo */
     
     /* varias imagenes y color */
@@ -93,6 +93,9 @@
     background-repeat: no-repeat;
     background-position: left top, center center;
     background-size: 100px 100px , 200px 200px, 700px 550px;
+
+    background: linear-gradient(90deg, #6b3c50, #1E9614, white);
+    background: radial-gradient( darkgrey 3%, var(--gris) 97%, var(--gris) 0%);
 
 }
 

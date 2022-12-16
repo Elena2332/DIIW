@@ -1,0 +1,19 @@
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #e9f2f7;
+}
+header nav ul li:hover {
+  border-radius: 0px 15px 0px 15px;
+  color: #e9f2f7;
+  background: linear-gradient(90deg, #0e0d0d, #757575, #e9f2f7);
+}
+header .logotipo {
+  margin: auto;
+  width: 350px;
+}
+header .logotipo img {
+  width: 100%;
+}/*# sourceMappingURL=estilos.css.map */
