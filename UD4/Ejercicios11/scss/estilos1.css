@@ -1,0 +1,90 @@
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6em;
+  color: #e9f2f7;
+}
+header nav ul li:hover {
+  border-radius: 0px 15px 0px 15px;
+  color: #e9f2f7;
+  font-style: oblique;
+  background: linear-gradient(90deg, #0e0d0d, #757575, #e9f2f7);
+}
+header .logotipo {
+  margin: auto;
+  width: 350px;
+}
+header .logotipo img {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: justify;
+  align-items: center;
+}
+main section article {
+  width: 100%;
+}
+main section article div {
+  text-align: right;
+}
+main section article img {
+  width: 200px;
+  position: relative;
+  top: 0;
+  left: 90%;
+}
+main section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+}
+main section form input, main section form textarea {
+  border-radius: 0px 15px 0px 15px;
+  color: #e9f2f7;
+  font-style: oblique;
+  width: 90%;
+  margin-top: 10px;
+}
+main section form textarea {
+  height: 70px;
+}
+main section form input[type=submit] {
+  background-color: #0e0d0d;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+main aside {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #0e0d0d;
+  color: #e9f2f7;
+}
+
+h2 {
+  width: 100%;
+  background-color: #757575;
+  border-radius: 0px 15px 0px 15px;
+  color: #e9f2f7;
+  font-style: oblique;
+  color: #e9f2f7;
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}/*# sourceMappingURL=estilos1.css.map */

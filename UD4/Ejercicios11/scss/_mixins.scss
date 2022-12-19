@@ -2,9 +2,10 @@
 {
     border-radius: 0px 15px 0px 15px;
     color: $blanco;
+    font-style: oblique;
 }
 
-@mixin flex($direccion,$alinV,$alinH)
+@mixin flex($direccion,$alinH,$alinV)
 {
     display: flex;
     flex-direction: #{$direccion};
@@ -12,3 +13,11 @@
     align-items: #{$alinV};
 }
 
+@mixin formato-h2
+{
+    width: 100%;
+    background-color: $gris;
+    @include borde-medio-redondo();
+    color: $blanco;
+    text-align: center;
+}

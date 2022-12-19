@@ -3,6 +3,7 @@ header
     nav
     {
         @include flex("row","center","center");
+        padding: 0.6em;
         color: $blanco;
         ul li:hover 
         {
@@ -19,4 +20,68 @@ header
             width: 100%;
         }
     }
+}
+
+main 
+{
+    @include flex("column","justify","center");
+    section 
+    {
+        article
+        {
+            width: 100%;            
+            div 
+            {
+                text-align: right;
+            }
+            img 
+            {
+                width: 200px;
+                position: relative;
+                top: 0;
+                left: 90%;
+            }        
+        }
+        form 
+        {
+            @include flex("column","left","left");
+            input, textarea
+            {
+                @include borde-medio-redondo;
+                width: 90%;
+                margin-top: 10px;
+            }
+            textarea 
+            {
+                height: 70px;
+            }
+            input[type="submit"]
+            {
+                background-color: $negro;
+                width: fit-content;
+                margin: auto;
+            }
+        }
+    }
+    aside 
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+footer 
+{
+    @include flex("row","center","center");
+    background-color: $negro;
+    color: $blanco;
+}
+
+h2 
+{
+    @include formato-h2;            
+}
+p 
+{
+    text-align: justify;
 }
