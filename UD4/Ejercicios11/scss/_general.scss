@@ -1,3 +1,10 @@
+body 
+{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
 header
 {
         width: 100%;
@@ -10,7 +17,7 @@ header
         {
             @include flex("row","space-evenly","center");
             flex-wrap: wrap;   
-            width: 50%;
+            width: 90%;
             li
             {
                 padding: 0.6em;
@@ -25,6 +32,11 @@ header
             {
                 @include borde-medio-redondo;
                 background: $degradado;
+            }
+
+            @media(min-width: 600px)
+            {
+                width: 40%;
             }
         }
         
@@ -43,6 +55,8 @@ header
 main 
 {
     @include flex("column","justify","center");
+    padding: 15px;
+    justify-content: center;
     section 
     {
         article
@@ -54,15 +68,14 @@ main
             }
             img 
             {
-                width: 200px;
-                position: relative;
-                top: 0;
-                left: 90%;
+                width: 180px;
+                float: right;
             }        
         }
         form 
         {
             @include flex("column","left","left");
+            border: 1px solid $negro;
             input, textarea
             {
                 @include borde-medio-redondo;
@@ -85,7 +98,7 @@ main
     {
         width: 100%;
         margin-bottom: 20px;
-    }
+    }    
 }
 
 footer 
@@ -98,7 +111,20 @@ h2
 {
     @include formato-h2;            
 }
-p 
+p
 {
     text-align: justify;
+}
+
+
+@media(min-width: 600px)
+{  
+    main
+    {
+        @include flex("row","center","flex-start");
+        aside 
+        {
+            @include flex("column","center","center");
+        }
+    }
 }
