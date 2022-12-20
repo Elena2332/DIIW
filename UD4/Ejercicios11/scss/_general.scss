@@ -1,23 +1,41 @@
 header
 {
+        width: 100%;
     nav
     {
-        @include flex("row","center","center");
-        padding: 0.6em;
-        color: $blanco;
-        ul li:hover 
+        @include flex("row","center","center");     
+        background: $degradadoReves;
+        width: 100%;
+        ul
         {
-            @include borde-medio-redondo;
-            background: $degradado;
+            @include flex("row","space-evenly","center");
+            flex-wrap: wrap;   
+            width: 50%;
+            li
+            {
+                padding: 0.6em;
+                list-style: none;
+                a 
+                {
+                    text-decoration: none;
+                    color: $blanco;
+                }                
+            }
+            li:hover 
+            {
+                @include borde-medio-redondo;
+                background: $degradado;
+            }
         }
+        
     }
     .logotipo
-    {
-        margin: auto;
-        width: 350px;
+    {      
+        @include fondo-negro-centro();  
+        width: 100%;
         img 
         {
-            width: 100%;
+            width: 30%;
         }
     }
 }
@@ -73,8 +91,7 @@ main
 footer 
 {
     @include flex("row","center","center");
-    background-color: $negro;
-    color: $blanco;
+    @include fondo-negro-centro();
 }
 
 h2 

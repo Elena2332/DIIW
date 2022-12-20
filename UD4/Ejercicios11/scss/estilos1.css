@@ -1,23 +1,43 @@
+header {
+  width: 100%;
+}
 header nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(90deg, #e9f2f7, #757575, #0e0d0d);
+  width: 100%;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50%;
+}
+header nav ul li {
   padding: 0.6em;
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
   color: #e9f2f7;
 }
 header nav ul li:hover {
-  border-radius: 0px 15px 0px 15px;
+  border-radius: 15px 0px;
   color: #e9f2f7;
   font-style: oblique;
   background: linear-gradient(90deg, #0e0d0d, #757575, #e9f2f7);
 }
 header .logotipo {
-  margin: auto;
-  width: 350px;
+  text-align: center;
+  background-color: #0e0d0d;
+  width: 100%;
 }
 header .logotipo img {
-  width: 100%;
+  width: 30%;
 }
 
 main {
@@ -45,7 +65,7 @@ main section form {
   align-items: left;
 }
 main section form input, main section form textarea {
-  border-radius: 0px 15px 0px 15px;
+  border-radius: 15px 0px;
   color: #e9f2f7;
   font-style: oblique;
   width: 90%;
@@ -71,14 +91,14 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background-color: #0e0d0d;
-  color: #e9f2f7;
 }
 
 h2 {
   width: 100%;
   background-color: #757575;
-  border-radius: 0px 15px 0px 15px;
+  border-radius: 15px 0px;
   color: #e9f2f7;
   font-style: oblique;
   color: #e9f2f7;

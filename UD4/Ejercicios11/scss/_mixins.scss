@@ -1,6 +1,6 @@
 @mixin borde-medio-redondo
 {
-    border-radius: 0px 15px 0px 15px;
+    border-radius: 15px 0px;
     color: $blanco;
     font-style: oblique;
 }
@@ -20,4 +20,10 @@
     @include borde-medio-redondo();
     color: $blanco;
     text-align: center;
+}
+
+@mixin fondo-negro-centro()
+{
+    text-align: center;
+    background-color: $negro;
 }
