@@ -1,0 +1,25 @@
+@mixin formato-caja
+{
+    width: 97%;
+    border-radius: 15px;
+    background-color: $grisOscuro;
+    padding: 10px;
+    margin: 1%;
+}
+
+@mixin formato-titulo
+{
+    width: 100%;
+    color: $naranja;
+    text-align: center;
+    text-transform: capitalize;
+    font-style: normal;
+}
+
+@mixin flex($direccion,$alinH,$alinV)
+{
+    display: flex;
+    flex-direction: #{$direccion};
+    justify-content: #{$alinH};
+    align-items: #{$alinV};
+}
