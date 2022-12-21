@@ -27,3 +27,9 @@
     text-align: center;
     background-color: $negro;
 }
+
+@mixin grid-pos($cIni,$cFin , $fIni,$fFin)   //columna i, columna f , fila i, fila f
+{
+    grid-column: $cIni/$cFin;
+    grid-row: $fIni/$fFin; 
+}

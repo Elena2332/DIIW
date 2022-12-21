@@ -1,0 +1,65 @@
+body 
+{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: $gris;
+
+    header
+    {
+        h1 
+        {
+            @include formato-titulo();
+        }
+    }
+    
+    nav 
+    {
+        @include flex("column","center","center");
+        @include formato-caja();
+        a
+        {
+            text-decoration: none;
+            color: $granate;
+            width: 100%;
+            text-align: center;
+        }
+        a:hover 
+        {
+            color: $rosa;
+            background-color: $granate;
+        }
+        @media(min-width: 650px)
+        {
+            @include flex("row","left","center");            
+        }
+    }
+
+    section 
+    {
+        article 
+        {       
+            @include formato-caja();
+            h2 
+            {
+                @include formato-titulo();
+            }
+            p 
+            {
+                color: $blanco;
+            }
+        }
+    }
+
+    footer 
+    {
+        @include formato-caja();
+        text-align: end;
+        span 
+        {
+            color: $granate;
+        }
+    }
+}
