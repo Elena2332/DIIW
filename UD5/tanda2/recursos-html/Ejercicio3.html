@@ -10,93 +10,91 @@
         <link href="css/ejercicio2.css" rel="stylesheet" >
         <link href="css/ejercicio3.css" rel="stylesheet" >
     </head>
-    <body class="container-fluid mx-4">
-        <h1>FORMULARIO</h1>
+    <body class="container mx-4">
+        <h1 class="text-center">FORMULARIO</h1>
         <div>
             <form action="#" method="post">
-                <div class="container-fluid">
-                    <div class="col-12 col-lg-6">
-                        <section>
+                <div class="container-fluid row">
+                    <div class="col-12 col-md-6">
+                        <section class="container-fluid">
                             <fieldset>
                                 <legend>Primera parte del formulario</legend>
-                                <div class="row">
-                                    <label class="col-sm-2" for="trato" >Trato: </label>
-                                    <input class="col-10 col-md-12" id="trato" type="text" name="trato"  class="form-control"/>
+                                <div class="row my-2">
+                                    <label class="col-3 col-md-4" for="trato" >Trato: </label>
+                                    <input class="col-9 col-md-12 mx-2" id="trato" type="text" name="trato"  class="form-control"/>
                                 </div>
-                                <div class="row">
-                                    <label class="col-sm-2" for="email">Email: </label>	
-                                    <input class="col-10 col-md-12" id="email" name="email" type="email" required autofocus class="form-control" />
+                                <div class="row my-2">
+                                    <label class="col-3 col-md-4" for="email">Email: </label>	
+                                    <input class="col-9 col-md-12 mx-2" id="email" name="email" type="email" required autofocus class="form-control" />
                                 </div>
-                                <div class="row">
-                                    <label class="col-sm-2" for="url">URL: </label>
-                                    <input class="col-10 col-md-12" id="url" type="url" name="url" required class="form-control"/>
+                                <div class="row my-2">
+                                    <label class="col-3 col-md-4" for="url">URL: </label>
+                                    <input class="col-9 col-md-12 mx-2" id="url" type="url" name="url" required class="form-control"/>
                                 </div>
-                                <div class="row">
-                                    <label class="col-sm-2" for="fecha">Fecha: </label>
-                                    <input class="col-10 col-md-12" id="fecha" name="fecha" type="date" min="2014-01-01" max="2014-12-31"  class="form-control"/>
+                                <div class="row my-2">
+                                    <label class="col-3 col-md-4" for="fecha">Fecha: </label>
+                                    <input class="col-9 col-md-12 mx-2" id="fecha" name="fecha" type="date" min="2014-01-01" max="2014-12-31"  class="form-control"/>
                                 </div>
-                                <div class="row">
-                                    <label class="col-sm-2" for="hora">Hora: </label>
-                                    <input class="col-10 col-md-12" id="hora" name="hora"  type="time" class="form-control"/>
+                                <div class="row my-2">
+                                    <label class="col-3 col-md-4" for="hora">Hora: </label>
+                                    <input class="col-9 col-md-12 mx-2" id="hora" name="hora"  type="time" class="form-control"/>
                                 </div>
-                                <div class="row">
-                                    <label class="col-sm-2" for="dia">Dia: </label>			
-                                    <input class="col-10 col-md-12" id="dia" name="dia" type="datetime-local" class="form-control"/>
+                                <div class="row my-2">
+                                    <label class="col-3 col-md-4" for="dia">Dia: </label>			
+                                    <input class="col-9 col-md-12 mx-2" id="dia" name="dia" type="datetime-local" class="form-control"/>
                                 </div>
-                                <div class="row">
-                                    <label class="col-sm-2" for="mes">Mes: </label>
-                                    <input class="col-10 col-md-12" id="mes" name="mes" type="month" class="form-control"/>
+                                <div class="row my-2">
+                                    <label class="col-3 col-md-4" for="mes">Mes: </label>
+                                    <input class="col-9 col-md-12 mx-2" id="mes" name="mes" type="month" class="form-control"/>
                                 </div>
                             </fieldset>
                         </section>
                     </div>
 
-                    <div class="col-12 col-lg-6">
-                        <section id="derecha">
+                    <div class="col-12 col-md-6">
+                        <section class="container-fluid" id="derecha">
 
                             <fieldset>
                                 <legend>Segunda parte del formulario</legend>
 
                                 <div class="form-group row">
-                                    <label class="col-sm-2" for="semana">Semana: </label>
-                                    <input class="col-10 col-md-12" id="semana" name="semana" type="week" class="form-control">
+                                    <label class="col-3 col-md-4" for="semana">Semana: </label>
+                                    <input class="col-9 col-md-12 mx-2" id="semana" name="semana" type="week" class="form-control">
                                 </div>
-                                <div class="row">
-                                    <label class="col-sm-2" for="numero">Número: </label>
-                                    <input class="col-10 col-md-12" id="numero" name="numero" type="number" min="0" max="100" class="form-control">
+                                <div class="row my-2">
+                                    <label class="col-3 col-md-4" for="numero">Número: </label>
+                                    <input class="col-9 col-md-12 mx-2" id="numero" name="numero" type="number" min="0" max="100" class="form-control">
                                 </div>
-                                <div class="row">
-                                    <label class="col-sm-2" for="rango" class="col-xs-4">Rango: </label>
-                                    <input class="col-10 col-md-12" id="rango" name="rango" type="range" min="0" max="20" step="2" >
+                                <div class="row my-2">
+                                    <label class="col-3 col-md-7" for="rango" class="col-xs-4">Rango: </label>
+                                    <input class="col-9 col-md-6 mx-2" id="rango" name="rango" type="range" min="0" max="20" step="2" >
                                 </div>
-                                <div class="row">
-                                    <label class="col-sm-2" for="tfno">Teléfono: </label>
-                                    <input class="col-10 col-md-12" id="tfno" name="tfno" type="tel" class="form-control">
+                                <div class="row my-2">
+                                    <label class="col-3 col-md-4" for="tfno">Teléfono: </label>
+                                    <input class="col-9 col-md-12 mx-2" id="tfno" name="tfno" type="tel" class="form-control">
                                 </div>
-                                <div class="row">
-                                    <label class="col-sm-2" for="buscar">Búsqueda: </label>
-                                    <input class="col-10 col-md-12" id="buscar" name="buscar" type="search" placeholder="Busca algo" class="form-control">
+                                <div class="row my-2">
+                                    <label class="col-3 col-md-4" for="buscar">Búsqueda: </label>
+                                    <input class="col-9 col-md-12 mx-2" id="buscar" name="buscar" type="search" placeholder="Busca algo" class="form-control">
                                 </div>
-                                <div class="row">
-                                    <label class="col-sm-2" for="color">Color: </label>
-                                    <input class="col-10 col-md-12" id="color" name="color" type="color" >
+                                <div class="row my-2">
+                                    <label class="col-3 col-md-4" for="color">Color: </label>
+                                    <input class="col-9 col-md-12 mx-2" id="color" name="color" type="color" >
                                 </div>
-                                <div class="row">
-                                    <label class="col-sm-2" for="pass" class="col-xs-4">Contraseña: </label>
-                                    <input class="col-10 col-md-12" id="pass" name="pass" type="password" pattern="[0-9][A-Z]{3}" title="1 número y 3 letras mayusculas" class="form-control">
+                                <div class="row my-2">
+                                    <label class="col-3 col-md-4" for="pass" class="col-xs-4">Contraseña: </label>
+                                    <input class="col-9 col-md-12 mx-2" id="pass" name="pass" type="password" pattern="[0-9][A-Z]{3}" title="1 número y 3 letras mayusculas" class="form-control">
                                 </div>
                             </fieldset>
                         </section>
                     </div>
                 </div>
-                <div>
-                    <div>
-                           
-                        <div>
-                            <button class="btn btn-succes" type="button">Enviar</button>
-                            <button class="btn btn-succes" type="button">Cancelar</button>
-                        </div>
-                          
+                <div class="col-12 my-5">
+                    <div class="col-3 mx-auto">             
+                        <div class="">
+                            <button class="btn btn-success" type="button">Enviar</button>
+                            <button class="btn btn-success" type="button">Cancelar</button>
+                        </div>                          
                     </div>
                 </div>
             </form> 

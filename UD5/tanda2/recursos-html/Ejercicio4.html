@@ -10,71 +10,68 @@
         <link href="css/ejercicio4.css" rel="stylesheet" >
     </head>
 
-    <body>
-        <div>
-
-            <header>
-                <div>
+    <body class="container-fluid bg-secondary">
+        <div class="container-fluid">
+            <header class="col-12 bg-primary bg-gradient text-white m-1">
+                <div class="text-center">
                     <h1>Nombre Apellidos</h1>
                     <h2>{ Diseñador Web }</h2>
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html" >HOME<br>BIENVENIDO</a></li>
-                        <li><a href="#formacion">FORMACIÓN<br>ACADÉMICA</a></li>
-                        <li><a href="#experiencia">EXPERIENCIA<br>LABORAL</a></li>
-                        <li><a href="#tecnologias">TECNOLOGÍAS<br>EMPLEADAS</a></li>
+                <nav class="m-2">
+                    <ul class="list-group">
+                        <li class="list-group-item bg-primary text-center border border-light rounded my-2"><a class="text-white" href="index.html" >HOME<br>BIENVENIDO</a></li>
+                        <li class="list-group-item bg-primary text-center border border-light rounded my-2"><a class="text-secondary" href="#formacion">FORMACIÓN<br>ACADÉMICA</a></li>
+                        <li class="list-group-item bg-primary text-center border border-light rounded my-2"><a class="text-white" href="#experiencia">EXPERIENCIA<br>LABORAL</a></li>
+                        <li class="list-group-item bg-primary text-center border border-light rounded my-2"><a class="text-secondary" href="#tecnologias">TECNOLOGÍAS<br>EMPLEADAS</a></li>
                     </ul>
                 </nav>
             </header>
-            
-
 
             <div>
                 <main>
-                    <div>
-                        <div>
-                            <article >
-                                <h3><span>1</span> ¿Quien Soy?</h3>
+                    <div class="row d-flex justify-content-around">
+                        <div class="bg-white col-12 col-sm-5 col-lg-4 my-3">
+                            <article class="bg-white p-3">
+                                <h3><span class="badge bg-primary rounded-pill text-white">1</span> ¿Quien Soy?</h3>
                                 <p>Lorem ipsum dolor amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </article>
                         </div>
-                        <div>
-                            <article >
-                                <h3><span>2</span> ¿Que Ofrezco?</h3>
+                        <div class="bg-white col-12 col-sm-5 col-lg-4 my-3">
+                            <article class="bg-white p-3">
+                                <h3><span class="badge bg-primary rounded-pill text-white">2</span> ¿Que Ofrezco?</h3>
                                 <p>Lorem ipsum dolor amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </article>
                         </div>
-                        <div>
-                            <article >
-                                <h3><span>3</span> ¿Quien Soy?</h3>
+                        <div class="bg-white col-12 col-sm-5 col-lg-4 my-3">
+                            <article class="bg-white p-3">
+                                <h3><span class="badge bg-primary rounded-pill text-white">3</span> ¿Quien Soy?</h3>
                                 <p>Lorem ipsum dolor amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </article>
                         </div>
-                        <div>
-                            <article >
-                                <h3><span>4</span> ¿Que Ofrezco?</h3>
+                        <div class="bg-white col-12 col-sm-5 col-lg-4 my-3">
+                            <article class="bg-white p-3">
+                                <h3><span class="badge bg-primary rounded-pill text-white">4</span> ¿Que Ofrezco?</h3>
                                 <p>Lorem ipsum dolor amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </article>
                         </div>
-                        <div>
-                            <article >
-                                <h3><span class="dropcap">5</span> ¿Quien Soy?</h3>
+                        <div class="bg-white col-12 col-sm-5 col-lg-4 my-3">
+                            <article class="bg-white p-3">
+                                <h3><span class="badge bg-primary rounded-pill text-white dropcap">5</span> ¿Quien Soy?</h3>
                                 <p>Lorem ipsum dolor amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </article>
                         </div>
-                        <div>
-                            <article >
-                                <h3><span>6</span> ¿Que Ofrezco?</h3>
+                        <div class="bg-white col-12 col-sm-5 col-lg-4 my-3">
+                            <article class="bg-white p-3">
+                                <h3><span class="badge bg-primary rounded-pill text-white">6</span> ¿Que Ofrezco?</h3>
                                 <p>Lorem ipsum dolor amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </article>
                         </div>
                     </div>
                 </main>
             </div>
-            <div>
-                <footer>
-                    <h3>Contacto</h3>
+            <div class="col-12 col-lg-10 mx-auto">
+                <footer class="col-12 bg-primary bg-gradient text-white p-1">
+                    <h3 class="text-center">Contacto</h3>
                     <form action="#" method="post">
                         <div>
                             <label for="nombre" >Nombre:</label>
@@ -94,14 +91,13 @@
                                 <textarea placeholder="Introduce tu mensaje" name="mensaje" id="mensaje" class="form-control" required=""></textarea>
                             </div>
                         </div>
-                        <div>
-                            <button type="button" >Enviar</button>
+                        <div class="text-center my-3">
+                            <button type="button" class="btn btn-primary">Enviar</button>
                         </div>
 
                     </form>
                 </footer>
             </div>
-        </div>
-        
+        </div>        
     </body>
 </html>
