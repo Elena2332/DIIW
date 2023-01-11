@@ -9,23 +9,22 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <link href="css/ejercicio5.css" rel="stylesheet" >
         <!-- Icono hamburguesa del menú en awesone-->
-        <link href="./fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet"> <!--load all styles -->
-        
+        <link href="../fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet"> <!--load all styles -->
     </head>
-    <body class="bg-danger bg-opacity-50">
-        <div>
-         <a class="milogo" href="#"><img src="imagenes/logoinfor.png" alt="" class="milogo"/></a>
-         <a><i class="fas fa-bars"></i></a>
+    <body class="fondo-rosa">      <!-- bg-danger bg-opacity-50 -->
+        <div class="d-flex justify-content-between">
+         <a href="#"><img src="../imagenes/logoinfor.png" alt="" class="icono-tam"/></a>
+         <a class="bg-primary" data-bs-toggle="collapse" aria-expanded="false" href="#menuu" role="button"><i class="fas fa-bars p-2 fa-inverse fa-2x "></i></a>
         </div>
-        <div>
+        <div class="collapse" id="menuu">
             <ul class="row">
-                <li class="col-12 col-lg-3 list-unstyled text-center">Home</li>
-                <li class="col-12 col-lg-3 list-unstyled text-center">Portátiles</li>
-                <li class="col-12 col-lg-3 list-unstyled text-center">Tablets</li>
-                <li class="col-12 col-lg-3 list-unstyled text-center">
-                    <button class="dropdown-toggle rosa border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <li class="col-12 col-md-3 list-unstyled text-center">Home</li>
+                <li class="col-12 col-md-3 list-unstyled text-center">Portátiles</li>
+                <li class="col-12 col-md-3 list-unstyled text-center">Tablets</li>
+                <li class="col-12 col-md-3 list-unstyled text-center">
+                    <button class="dropdown-toggle border-0 fondo-rosa" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                     Tienda online </button>
-                    <ul class="dropdown-menu rosa" aria-labelledby="dropdownMenuButton1">
+                    <ul class="dropdown-menu fondo-rosa" aria-labelledby="dropdownMenuButton1">
                         <li class=""><a class="col-12 dropdown-item" href="#">Productos</a></li>
                         <li class=""><a class=" col-12 dropdown-item" href="#">Pedidos</a></li>
                         <li class=""><a class=" col-12 dropdown-item" href="#">Devoluciones</a></li>
@@ -36,60 +35,68 @@
         </div>
 
         <div class="container-fluid">
-            <div class="container-fluid">
-                <div>
-                    <a href="#">
-                        <img class="imagen_producto" src="imagenes/imagen1.jpg" alt="Portatiles">
+            <div class="row text-center">
+                <div class="col-12 col-lg-4">
+                    <a href="#" class="img-thumbnail rounded mx-auto d-block">
+                        <img class="imagen_producto" src="../imagenes/imagen1.jpg" alt="Portatiles">
                     </a>
                     <h3>Producto 1</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
                 </div>
-                <div>
-                    <a>href="#">
-                        <img class="imagen_producto" src="imagenes/imagen2.jpg" alt="Tablets">
+                <div class="col-12 col-lg-4">
+                    <a href="#" class="img-thumbnail rounded mx-auto d-block">
+                        <img class="imagen_producto" src="../imagenes/imagen2.jpg" alt="Tablets">
                     </a>
                     <h3>Producto 2</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
                 </div>
-                <div>
-                    <a>href="#">
-                        <img class="imagen_producto" src="imagenes/imagen3.jpg" alt="Moviles">
+                <div class="col-12 col-lg-4">
+                    <a href="#" class="img-thumbnail rounded mx-auto d-block">
+                        <img class="imagen_producto" src="../imagenes/imagen3.jpg" alt="Moviles">
                     </a>
                     <h3>Producto 3</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
                 </div>
             </div>
-            <div>
-                <div>
-                    <a href="#">
-                        <img class="imagen_producto" src="imagenes/imagen1.jpg" alt="Portatiles">
+            <div class="row text-center">
+                <div class="col-12 col-lg-4">
+                    <a href="#" class="img-thumbnail rounded mx-auto d-block">
+                        <img class="imagen_producto" src="../imagenes/imagen1.jpg" alt="Portatiles">
                     </a>
                     <h3>Producto 4</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
                 </div>
-                <div>
-                    <a>href="#">
-                        <img class="imagen_producto" src="imagenes/imagen2.jpg" alt="Tablets">
+                <div class="col-12 col-lg-4">
+                    <a href="#" class="img-thumbnail rounded mx-auto d-block">
+                        <img class="imagen_producto" src="../imagenes/imagen2.jpg" alt="Tablets">
                     </a>
                     <h3>Producto 5</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
                 </div>
-                <div>
+                <div class="col-12 col-lg-4">
                     <a class="img-thumbnail rounded mx-auto d-block" href="#">
-                        <img class="imagen_producto" src="imagenes/imagen3.jpg" alt="Moviles">
+                        <img class="imagen_producto" src="../imagenes/imagen3.jpg" alt="Moviles">
                     </a>
                     <h3>Producto 6</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
                 </div>
             </div>
-            <div>
-                <div> 
-                    <ul>
-                        
+            <div class="d-flex justify-content-center">
+                <div class="row"> 
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
                         <li class="page-item"><a class="page-link" href="#">1</a></li>
                         <li class="page-item"><a class="page-link" href="#">2</a></li>
                         <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>     
