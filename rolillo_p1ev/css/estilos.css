@@ -85,10 +85,17 @@ header
     height: 60px;
 }
 
-
+.menuDesplegado
+{
+    background-color: coral;
+}
+.menuOculto
+{
+    background-color: darkgoldenrod;
+}
 .menu
 {
-    display: none;
+    /* display: none; */
     /* position: absolute; */
     /* top: 4%; */
     width: fit-content;
