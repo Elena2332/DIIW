@@ -93,6 +93,7 @@
     background-repeat: no-repeat;
     background-position: left top, center center;
     background-size: 100px 100px , 200px 200px, 700px 550px;
+    background-size: cover;   /* da el tamaño maximo si deformar la imagen */
 
     background: linear-gradient(90deg, #6b3c50, #1E9614, white);
     background: radial-gradient( darkgrey 3%, var(--gris) 97%, var(--gris) 0%);
@@ -128,4 +129,114 @@
     75%{transform: translate(0px, 500px);}
     100%{transform: translate(0px);}
     /* 98%{transform: translateY(0px);} */
+}
+
+
+/*** contenido interactivo ***/
+/* efecto parallax  UD3 ej2 */
+
+/* carrousel   UD3 ej5 */
+
+/* fondo infinito con patron  UD3 ej3 */
+    /*  en el html
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="app.js"></script>
+
+    en app.js
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            var barra = $(window).scrollTop();
+            var posicion = barra * 0.20;
+
+            $('body').css({
+                'background-position': '0 -' + posicion + 'px'
+            });
+    	});
+    });  */
+body{
+    background:url(../img/waves.gif); /* Nuestra textura */
+	background-repeat:repeat;   /* Indicamos que la textura se repetira */
+	background-attachment: fixed; /* Establecemos una posicion fija para la textura */
+}
+
+/* fondo a capas   UD3 ej4 */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: url(../img/Fondo.png) 
+    center center;
+    background-size: cover;
+}
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.pos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.mountain5 {
+    background: url(../img/M1.png) 
+    center center;
+    background-size: cover;
+    transform: scale3d(1.5, 1.0, 1.4);
+    opacity: 0.2;
+    animation: scaler 0.8s ease-out;
+    animation-fill-mode: forwards;
+}
+.mountain4 {
+    background: url(../img/m2.png) 
+    center center;
+    background-size: cover;
+    transform: scale3d(1.4, 1.3, 1.3);
+    opacity: 0.1;
+    animation: scaler 1.2s ease-out;
+    animation-fill-mode: forwards;
+}
+.mountain3 {
+    background: url(../img/m3.png) 
+    center center;
+    background-size: cover;
+    transform: scale3d(1.3, 1.1, 1.2);
+    opacity: 0.2;
+    animation: scaler 1.3s ease-out;
+    animation-fill-mode: forwards;
+}
+.mountain2 {
+    background: url(../img/m4.png) 
+    center center;
+    background-size: cover;
+    transform: scale3d(1.2, 1.1, 1.1);
+    opacity: 0.1;
+    animation: scaler 1.4s ease-out;
+    animation-fill-mode: forwards;
+}
+.mountain1 {
+    background: url(../img/m5.png) 
+    center center;
+    background-size: cover;
+    transform: scale3d(1.0, 1.3, 1.0);
+    opacity: 0.1;
+    animation: scaler 1.5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveUp {
+    100% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes scaler {
+    100% {
+        transform: scale3d(1, 1, 1);
+        opacity: 1;
+    }
 }
