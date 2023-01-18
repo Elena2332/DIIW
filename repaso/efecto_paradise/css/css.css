@@ -1,0 +1,23 @@
+html,body 
+{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor
+{
+    width: 100%;
+    height: 100%;
+}
+
+.conEfecto
+{
+    /* border: 1px dashed bisque; */
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/paradise.PNG);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
