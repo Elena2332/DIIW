@@ -7,7 +7,8 @@
     --azulOscuro: #507d90;
     --arena: #e4ddc5;
     --marron: #9b907b;
-    --gris: #505656;
+    --grisClaro: #505656;
+    --gris: #343636;
     --negro: #0d1214;
     --morado: #5e6e8b;
     --mediofondo: #2d2f4abb;
@@ -71,7 +72,7 @@ header
 {
     width: 100%;
 }
-#btnMenu
+/* #btnMenu
 {
     border-radius: 7px;
     
@@ -83,7 +84,7 @@ header
 {
     margin: 15px;
     height: 60px;
-}
+} 
 
 .menuDesplegado
 {
@@ -92,7 +93,8 @@ header
 .menuOculto
 {
     background-color: darkgoldenrod;
-}
+}*/
+
 .menu
 {
     /* display: none; */
