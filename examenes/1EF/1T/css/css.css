@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/*
+    #ab2b7d   --morado
+    #38ab2b   --verde
+*/
+
+body
+{
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto auto;
+
+    font-family: 'Roboto';
+    background: black;
+}
+
+header
+{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    width: 100%;
+}
+header img 
+{
+    width: 100vw;
+}
+header h1 
+{
+    display: none;
+}
+
+
+
+main
+{
+    grid-column: 1/3;
+    grid-row:2/3;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    
+    margin-bottom: 10%;
+}
+main nav 
+{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;   
+    transition: all 2s ease;    
+
+    z-index: 3;
+}
+main nav a 
+{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 5vw;
+    margin: 2% 0;
+    width: 100vw;
+    padding: 2% 0;
+    background-color: #ab2b7d;
+    transition: all 2s ease;
+}
+main nav a ul 
+{
+    display: none;
+}
+main nav a:hover 
+{
+    text-align: end;
+    text-transform: uppercase;
+}
+main nav a:hover ul 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+main nav a:hover ul li
+{
+    list-style: none;
+}
+
+main aside 
+{
+    z-index: 3;
+}
+main aside:nth-of-type(1)
+{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+main aside:nth-of-type(1) iframe
+{
+    width: 100%;
+}
+main aside:nth-of-type(2)  /* elefante */
+{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main aside:nth-of-type(2) img
+{
+    width: 70%;
+}
+main aside:nth-of-type(3),main aside:nth-of-type(4)
+{
+    display: none;
+}
+
+main div 
+{
+    grid-column: 2/3;
+    grid-row: 1/3;
+
+    background-image: url('../img/TexturaHojas.png');
+
+    z-index: 0;
+}
+
+
+footer 
+{
+    grid-column: 1/3;
+    grid-row: 3/4;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    
+    border-top: 5px double #38ab2b;
+    border-bottom: 5px double #38ab2b;
+}
+footer img 
+{
+    height: 40%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+/*/////////////////////////////////////////////////////////////
+    ///////////     Pantalla  550     //////////////
+////////////////////////////////////////////////////////////*/
+
+@media screen and (min-width: 550px) 
+{
+    body
+    {
+        background: white;
+    }
+    header
+    {
+        text-align: center;
+    }
+    header img
+    {
+        width: 80vw;
+        margin: auto;
+    }
+    header h1
+    {
+        display: block;
+        transform: rotate(90deg);
+        color: white;
+        padding: 0 2%;
+        background: #ab2b7d;
+        /* position: absolute;
+        left: 80%; */
+        
+    }
+
+    main 
+    {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin: 0;
+    }
+    main nav 
+    {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 50vw;
+    }
+    main nav a 
+    {
+        width: 50vw;
+    }
+    main nav a:hover 
+    {        
+        width: 100vw;
+    }
+
+    main aside:nth-of-type(2)  /* elefante */
+    {
+        grid-column: 2/3;
+        grid-row: 1/3;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        z-index: 1;
+    }
+    main aside:nth-of-type(4)  /* carteles */
+    {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+
+    }
+    main aside:nth-of-type(4) img 
+    {
+        width: 45%;
+        height: min-content;
+        margin: auto;
+    }
+    main aside:nth-of-type(3)  /* anuncios verdes */
+    {
+        grid-column: 2/3;
+        grid-row: 4/5;
+
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    main aside:nth-of-type(3) img 
+    {
+        width: 45%;
+    }
+    main aside:nth-of-type(1)  /* iframe */
+    {
+        display: block;
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    main aside:nth-of-type(1) iframe
+    {
+        height: 100%;
+    }
+
+    main div    /* animacion pajaro */
+    {
+        grid-column: 1/3;
+        grid-row: 3/4;
+        width: 100vw;
+        background: url('../img/txoriak.png') no-repeat left center;
+        animation: pajaro 4s 0s infinite normal linear;
+        animation-play-state: running;
+    }
+    main div:hover
+    {
+        animation-play-state: paused;
+    }
+
+    footer 
+    {
+        flex-direction: row;
+        align-items: end;
+    }
+
+}
+
+
+@keyframes pajaro
+{
+    /* 0%{transform: translate(0vw);}
+    100%{transform: translate(100vw);} */
+    0%{background-position: left center;}
+    100%{background-position: right center;}
+}
